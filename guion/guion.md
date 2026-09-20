@@ -449,7 +449,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 | Camaleón | Imágenes | Color, luz | Sensibilidad al contexto |
 | Cuadrantes | Números | Matemáticas | Cobertura del espacio |
 
-**Actividad · Tu turno (5 min + puesta en común).** Elige un contenido de **tu materia** que consista en clasificar. Decide si el modelo sería de **texto, imágenes o números**; define las **clases** y tres ejemplos de cada una; y piensa qué **sesgo** podría aparecer. Pon en común dos o tres propuestas.
+**Actividad · Tu turno (5 min + puesta en común).** Elige un contenido de **tu materia** que consista en clasificar. Decide si el modelo sería de **texto, imágenes o números**; define las **clases** y **al menos diez ejemplos** de cada una; y piensa qué **sesgo** podría aparecer. Pon en común dos o tres propuestas.
 
 *Para reflexionar por escrito (opcional)*: ¿cómo puede este tipo de actividad ayudar a los estudiantes a entender mejor los contenidos? Especialmente, la tarea de **recopilar datos** para elaborar un buen conjunto de entrenamiento.
 

@@ -777,7 +777,7 @@ Cuatro modelos, cuatro tipos de datos
 
 - Elige un **contenido de tu materia** que consista en clasificar
 - Decide: **¿texto, imágenes o números?**
-- Define las **clases** y 3 ejemplos de cada una
+- Define las **clases** y **al menos 10 ejemplos** de cada una
 - Piensa: ¿qué **sesgo** podría aparecer?
 
 **5 minutos** · después lo compartimos
