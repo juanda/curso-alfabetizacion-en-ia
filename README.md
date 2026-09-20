@@ -1,6 +1,6 @@
 # Sesión «Alfabetización en IA: aprender a crear para comprender»
 
-Material para la sesión del curso de IA para docentes del **21 de septiembre de 2026**.
+Material para la sesión del curso de IA para docentes.
 Autor: **Juan David Rodríguez García** · Licencia **CC BY-NC 4.0** (ver `LICENCIA.md`).
 
 ## Qué contiene
