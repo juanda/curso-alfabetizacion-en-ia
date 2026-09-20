@@ -15,8 +15,8 @@ def asistente():
     s.arrow(650, 300, 830, 300, sw=4)
     i_lampara(s, 920, 250, 1.6, True)
     i_ventilador(s, 1100, 260, 1.4)
-    s.text(920, 440, "enciende lámpara", 26, font="note"); s.text(1100, 440, "apaga ventilador", 26, font="note")
-    s.text(600, 530, "4 clases: enciende/apaga lámpara · enciende/apaga ventilador", 30, font="note")
+    s.text(920, 440, "encender luz", 26, font="note"); s.text(1100, 440, "apagar ventilador", 26, font="note")
+    s.text(600, 530, "4 clases: encender/apagar luz · encender/apagar ventilador", 30, font="note")
     return s
 
 
@@ -30,24 +30,41 @@ def cuadro(s, x, y, w, h, tipo):
         s.poly([(x + 20, y + 20), (x + w / 2, y + 30), (x + w / 2 - 20, y + h - 20), (x + 30, y + h - 40)], "orange", sw=2.4)
         s.poly([(x + w / 2, y + 30), (x + w - 20, y + 60), (x + w - 40, y + h - 30), (x + w / 2 - 20, y + h - 20)], "blue", sw=2.4)
         s.poly([(x + w / 2 - 30, y + 70), (x + w / 2 + 30, y + 90), (x + w / 2 + 10, y + 130)], "yellow", sw=2.4)
-    else:
-        s.rect(x + 10, y + h * .62, w - 20, h * .34, "#e8cf9f", r=2, sw=1.6, dbl=False)
-        s.path([(x + 30, y + 90), (x + 80, y + 70), (x + 130, y + 110), (x + 120, y + 150), (x + 60, y + 150)], True, "yellow", INK, 2.6, 1)
-        s.line(x + 80, y + 110, x + 80, y + 80, sw=2.4, dbl=False); s.line(x + 80, y + 110, x + 105, y + 120, sw=2.4, dbl=False)
-        s.line(x + 40, y + h * .62, x + 40, y + 50, sw=3)
+    elif tipo == "expresionismo":
+        s.o.append('<rect x="{}" y="{}" width="{}" height="{}" fill="#ffd0a0" opacity=".55"/>'.format(x + 4, y + 4, w - 8, h - 8))
+        for k, c in enumerate(("#f0645a", "#ff9d5c", "#5a8fd8", "#f0645a")):
+            yy = y + 40 + k * 44
+            pts = [(x + 14, yy), (x + w * .3, yy - 26), (x + w * .55, yy + 26), (x + w * .8, yy - 22), (x + w - 14, yy + 6)]
+            s.path(pts, False, None, stroke=c, sw=9, amp=2, dbl=False)
+        s.ellipse(x + w / 2, y + h - 52, 20, 26, "#cfe6f7", sw=3)
+        s.ellipse(x + w / 2 - 7, y + h - 58, 3, 4, "#333", dbl=False, sw=2); s.ellipse(x + w / 2 + 7, y + h - 58, 3, 4, "#333", dbl=False, sw=2)
+    elif tipo == "pop":
+        for i in range(5):
+            for j in range(5):
+                s.ellipse(x + 26 + i * (w - 52) / 4, y + 26 + j * (h - 52) / 4, 6, 6, "pink", sw=1.2, dbl=False)
+        s.star(x + w / 2, y + h / 2, 62, "yellow")
+        s.text(x + w / 2, y + h / 2 + 12, "POP!", 34, font="title", color="#d0302a")
+    else:  # realismo: casa, árbol y cielo, todo muy ordenado
+        s.rect(x + 8, y + 8, w - 16, h * .55, "#cfe6f7", r=2, sw=1.6, dbl=False)
+        s.rect(x + 8, y + h * .58, w - 16, h * .38, "#b8dd8a", r=2, sw=1.6, dbl=False)
+        s.rect(x + 34, y + h * .38, 92, 66, "#f3e2c0", r=2, sw=2.6)
+        s.poly([(x + 26, y + h * .38), (x + 80, y + h * .38 - 38), (x + 134, y + h * .38)], "#c0503a", sw=2.6)
+        s.rect(x + 66, y + h * .38 + 24, 24, 42, "#8b5e3c", r=2, sw=2.2, dbl=False)
+        s.line(x + w - 50, y + h * .5, x + w - 50, y + h * .8, sw=5, stroke="#8b5e3c")
+        s.ellipse(x + w - 50, y + h * .42, 30, 34, "green", sw=2.6)
 
 
 def estilos():
     s = Sketch(1300, 560, 72)
-    nombres = ["impresionismo", "cubismo", "surrealismo"]
+    nombres = ["cubismo", "expresionismo", "impresionismo", "pop", "realismo"]
     for i, n in enumerate(nombres):
-        x = 60 + i * 300
-        cuadro(s, x, 60, 250, 250, n)
-        s.text(x + 125, 350, n, 32, font="title")
-    maquina(s, 1120, 250, 0.42, "ajustada", "?")
-    s.bubble(980, 30, 270, 60, ["¿qué estilo es?"], tail=(1110, 120), size=30, font="title")
-    s.text(650, 470, "el estudiante debe aprender a distinguirlos antes de enseñar a la máquina", 32, font="note")
-    s.text(650, 520, "modelo de imágenes · 3 clases", 28, font="note")
+        x = 25 + i * 252
+        cuadro(s, x, 40, 230, 230, n)
+        s.text(x + 115, 318, n, 32, font="title")
+    s.text(390, 430, "5 clases · unas 15 imágenes por estilo", 32, font="note")
+    s.text(390, 470, "+ imágenes de prueba para evaluar", 28, font="note")
+    maquina(s, 1050, 460, 0.42, "ajustada", "?")
+    s.bubble(830, 350, 250, 56, ["¿qué estilo es?"], tail=(1030, 415), size=30, font="title")
     return s
 
 

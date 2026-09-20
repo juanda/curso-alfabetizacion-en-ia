@@ -702,12 +702,12 @@ Cuatro modelos, cuatro tipos de datos
 
 1. **Problema**: entender órdenes en lenguaje natural
 2. Crear un **modelo de texto** con **4 clases**
-3. **5–10 frases** por clase, con distintas formas de decirlo
+3. **Frases** por clase, con distintas formas de decirlo (o carga el dataset)
 4. **Aprender** y **probar** con frases nuevas
 5. En **Scratch**: preguntar → reconocer → *encender o apagar* el sprite
 6. Reflexión: ¿por qué falla con frases no vistas?
 
-<div class="aviso">Sprites de lámpara y ventilador en web.learningml.org/recursos</div>
+<div class="aviso">Recursos: <a href="https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip">sprites</a> · <a href="https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip">dataset</a></div>
 
 ---
 
@@ -719,17 +719,19 @@ Cuatro modelos, cuatro tipos de datos
 
 ---
 
-<!-- _class: grande -->
+<!-- _class: compacta -->
 
 ## Estilos pictóricos: paso a paso
 
-1. **Elegir estilos** que se estudian en clase
-2. **Buscar imágenes** de cada estilo y etiquetarlas
-3. Aprender, **evaluar** y ver dónde se confunde
+1. Usa los **5 estilos** del dataset: cubismo, expresionismo, impresionismo, pop y realismo
+2. **Aprende**: unas 15 imágenes por estilo, ya etiquetadas
+3. **Evalúa** con las imágenes de prueba y mira dónde se confunde
 4. Aplicación: sube un cuadro y **dime qué estilo es**
 5. ¿Qué **aprende el estudiante**?
    - Los rasgos de cada estilo, para poder enseñarlos
    - Que un mal conjunto de datos genera **errores y sesgos**
+
+<div class="aviso">Recurso: <a href="https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip">dataset de estilos pictóricos</a></div>
 
 ---
 
@@ -739,10 +741,12 @@ Cuatro modelos, cuatro tipos de datos
 
 ![bg right:46% fit](img/camaleon.png)
 
-- Modelo de imágenes con **una clase por color**
-- Entrenamos con **imágenes de colores** (o con la cámara)
+- Modelo de imágenes con **una clase por color**: azul, verde, rojo y amarillo
+- Se entrena con el **dataset de colores** y se evalúa con sus imágenes de prueba
 - En Scratch, el **camaleón toma el color** que reconoce
 - Pregunta: ¿qué pasa con **poca luz**? ¿con **otros fondos**?
+
+<div class="aviso">Recursos: <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip">sprites</a> · <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip">dataset</a></div>
 
 ---
 

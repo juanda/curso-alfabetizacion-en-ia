@@ -60,7 +60,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 ## Preparación previa (checklist)
 
 - [ ] Abrir **learningml.org** y comprobar que funciona el editor de modelos y el Scratch de LearningML.
-- [ ] Tener listos los **materiales de las demos**: frases del asistente, imágenes de estilos pictóricos, el proyecto del camaleón y los enunciados del ejemplo matemático (ver bloque 6).
+- [ ] Descargar los **recursos de las demostraciones** (sprites y datasets del asistente, el camaleón y los estilos pictóricos; ver bloque 6).
 - [ ] Probar **Glass Parrot** (https://glass-parrot.vercel.app/) desde el ordenador y la red del aula. *Truco*: si escribes directamente la dirección de las secciones internas (por ejemplo, el tutorial), el servidor puede devolver un error 404; entra siempre por la portada y usa el menú **Tutorial** / **Ponte a prueba**.
 - [ ] **Contrastar los hechos del verano de 2026** (bloque 1) con las fuentes originales, porque vienen de prensa y de fuentes secundarias y algunas cifras difieren (ver el anexo A).
 - [ ] Publicar en la plataforma los **enunciados de las tareas** (anexo E) con sus recursos: frases del asistente, sprites, imágenes y la ficha de registro de Glass Parrot.
@@ -375,23 +375,28 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 **Formato**: para cada ejemplo, 5–7 minutos de **demostración en directo**. El grupo **no practica en clase**: reproducirá y adaptará estos modelos después, como tarea en la plataforma (tareas 1 y 2 del anexo E).
 
-*Nota sobre materiales*: los ejemplos están descritos en la documentación del proyecto (sesión 5 de las actividades) y en el blog de LearningML. Antes de la sesión localiza y descarga lo que necesites (y súbelo también a la plataforma para las tareas): las frases del asistente y los sprites de lámpara y ventilador (https://web.learningml.org/recursos/), los enunciados de matemáticas (https://web.learningml.org/wp-content/uploads/2021/11/enunciados-de-problemas-de-matematicas.pdf), el ejemplo del camaleón (https://learningml.org/flipalo-en-colores-con-learningml/) y los estilos pictóricos (entradas «Programando con Jara. Estilos pictóricos», partes 1 y 2, del blog).
+**Recursos de las demostraciones y de las tareas** (descárgalos antes de la sesión y súbelos también a la plataforma):
+
+- **El asistente virtual**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) (lámpara y ventilador) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip) (una lista de frases por clase y un modelo ya construido).
+- **Flípalo en colores con el camaleón**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) (el camaleón con sus disfraces de colores) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) (imágenes de cuatro colores y de prueba).
+- **Reconoce los estilos pictóricos**: [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) (cinco estilos y una carpeta de imágenes de prueba).
+- **Los cuadrantes matemáticos**: no necesita recursos; los puntos se escriben a mano.
 
 ## Ejemplo 1 · Texto: el asistente virtual
 
 ![](../presentacion/img/asistente.png){width=95%}
 
-**Enunciado.** Queremos un asistente que reconozca órdenes en lenguaje natural para **encender/apagar una lámpara** y **encender/apagar un ventilador**, y que las ejecute.
+**Enunciado.** Queremos un asistente que reconozca órdenes en lenguaje natural para **encender/apagar una lámpara** y **encender/apagar un ventilador**, y que las ejecute. **Recursos**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip).
 
 **Por qué es un buen primer ejemplo.** Sin ML, el asistente solo reconoce exactamente las cuatro frases programadas; si el usuario dice «¿podrías encender la lámpara, por favor?», no lo entiende. ¿Cómo lo mejoramos? Ese es el problema que resuelve el ML: entender frases *equivalentes* que no hemos previsto.
 
 **Paso a paso.**
 
 1. En LearningML, elegir **reconocimiento de textos**.
-2. Crear **4 clases**: *enciende lámpara*, *apaga lámpara*, *enciende ventilador*, *apaga ventilador*.
-3. Añadir **entre 5 y 10 frases por clase**, con formas distintas de decir lo mismo: «enciende la lámpara», «por favor, conecta la luz», «quiero luz», «apaga la lámpara», «desconecta la luz»…
+2. Crear **4 clases**: *encender luz*, *apagar luz*, *encender ventilador*, *apagar ventilador* (así se llaman en el dataset).
+3. Añadir **frases a cada clase**, con formas distintas de decir lo mismo: «Activa la luz», «Prende la luz», «Ilumina la habitación»… El dataset trae unas 25 por clase; para la demostración puedes empezar con 5–10 y ampliar después.
 4. Pulsar **Aprender a reconocer** y probar con frases que **no** están en el dataset.
-5. En **Scratch**: preguntar al usuario, usar el bloque de reconocimiento con el modelo, y según la clase devuelta, mostrar u ocultar el sprite de la lámpara o del ventilador.
+5. En **Scratch**: preguntar al usuario, usar el bloque de reconocimiento con el modelo, y según la clase devuelta, mostrar u ocultar el sprite de la lámpara o del ventilador (`lampara.sprite3` y `ventilador.sprite3`, dentro del zip de sprites).
 6. Ampliación: añadir otro aparato (aspiradora, televisión…), lo que exige **nuevas clases**, nuevo entrenamiento y modificar el programa.
 
 **Qué se aprende / de qué nos hace reflexionar.** El estudiante trabaja el lenguaje (¿cómo expresamos órdenes?). Sobre IA: la **generalización** (frases nuevas), la importancia de la **variedad** de los ejemplos y el hecho de que el modelo **puede equivocarse**.
@@ -400,13 +405,13 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/estilos.png){width=95%}
 
-**Enunciado.** Un modelo que reconoce el estilo de una obra pictórica (por ejemplo, impresionismo, cubismo y surrealismo).
+**Enunciado.** Un modelo que reconoce el estilo de una obra pictórica. El [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) propone cinco estilos: **cubismo, expresionismo, impresionismo, pop y realismo**.
 
 **Paso a paso.**
 
 1. Reconocimiento de **imágenes**; crear una clase por estilo.
-2. Buscar obras representativas de cada estilo y **añadirlas como ejemplos**, con distintos autores y temas dentro de cada estilo.
-3. Aprender y **evaluar**: probar con obras que no estén en el dataset y ver dónde se confunde.
+2. **Añadir como ejemplos** las imágenes del dataset (unas 15 por estilo) o buscar otras obras representativas, con distintos autores y temas dentro de cada estilo.
+3. Aprender y **evaluar** con la carpeta de imágenes de prueba (`test`) y ver dónde se confunde.
 4. Aplicación en Scratch: el usuario elige una obra y el programa «dice» a qué estilo pertenece.
 
 **Qué se aprende.** Para clasificar bien los ejemplos, el estudiante **tiene que saber** qué caracteriza a cada estilo: *aprende arte para poder enseñarlo*. Sobre IA: si todos los cuadros impresionistas del dataset son paisajes, ¿reconocerá un retrato impresionista? Es una puerta natural al **sesgo** y a la **representatividad** de los datos.
@@ -415,13 +420,13 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/camaleon.png){width=60%}
 
-**Enunciado.** Un camaleón que toma el color de lo que ve. Según el proyecto publicado en el blog de LearningML («¡Flípalo en colores con LearningML!»), se trata de una aplicación que **identifica colores** y que se conecta a un sprite de camaleón en Scratch.
+**Enunciado.** Un camaleón que toma el color de lo que ve: una aplicación que **identifica colores** con un modelo de imágenes y se conecta a un sprite de camaleón en Scratch. **Recursos**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip).
 
 **Paso a paso.**
 
-1. Modelo de imágenes con una clase por color (rojo, azul, verde, amarillo…).
-2. Entrenar con imágenes de cada color (el blog proporciona un conjunto de ejemplos; también puede hacerse con la cámara, mostrando papeles de colores).
-3. Importar el proyecto del camaleón en el Scratch de LearningML (recuerda **descomprimir** el archivo antes) y enlazar el modelo.
+1. Modelo de imágenes con una clase por color (azul, verde, rojo y amarillo).
+2. Entrenar con el dataset (carpetas `01.blue`, `02.green`, `03.red` y `04.yellow`, con unas 15 imágenes cada una) y evaluar con la carpeta de prueba `05.tests`.
+3. Importar el sprite del camaleón (`camaleon.sprite3`, con sus disfraces azul, verde, rojo y amarillo) en el Scratch de LearningML (recuerda **descomprimir** el zip antes) y enlazar el modelo.
 4. Probar: ¿qué ocurre con **poca luz**? ¿Con **fondos** distintos? ¿Con colores intermedios (naranja, morado)?
 
 **Qué se aprende.** Un ejemplo muy visual e inmediato, ideal para edades tempranas. Sobre IA: la **sensibilidad al contexto** (luz, fondo, cámara) y la importancia de que los datos de entrenamiento sean **parecidos a las condiciones de uso**.
@@ -672,6 +677,7 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 
 - **LearningML**: https://learningml.org · editor de modelos: https://learningml.org/editor · Scratch con ML: https://learningml.org/scratch/ · manual: https://learningml.org/manual/
 - **Ejemplos** en el blog de LearningML: «¡Flípalo en colores con LearningML!» (camaleón), «Programando con Jara. Estilos pictóricos» (partes 1 y 2), «Reconocimiento de conjuntos numéricos» y «LearningML: Mejor recurso educativo 2024 — All Digital».
+- **Recursos de las actividades de LearningML**: sprites y datasets del asistente virtual, del camaleón y de los estilos pictóricos (ver bloque 6).
 - **Glass Parrot**: https://glass-parrot.vercel.app/ · código: https://github.com/ElenaTomasVela/GlassParrot
 - **Textos de entrenamiento para Glass Parrot**: carpeta `samples/` del proyecto (19 fábulas y cuentos infantiles en dominio público, de Samaniego, Iriarte, Quiroga y Martí; índice y licencias en `samples/FUENTES.md`). Las fábulas en verso de Samaniego (`01`–`07`) son cortas y muy adecuadas para ver los n-gramas; «El loro pelado» (`12`) encaja con el nombre de la herramienta.
 - **Scratch**: https://scratch.mit.edu
@@ -712,7 +718,7 @@ Las actividades no se hacen en clase: se proponen como tareas que los docentes r
 
 ### Tarea 2 · Crea un modelo con LearningML (≈ 60 min)
 
-1. Elige **uno de los cuatro ejemplos** de la sesión (asistente virtual, estilos pictóricos, camaleón, cuadrantes) o **el modelo que diseñaste en la tarea 1**.
+1. Elige **uno de los cuatro ejemplos** de la sesión (asistente virtual, estilos pictóricos, camaleón, cuadrantes) o **el modelo que diseñaste en la tarea 1**. Los sprites y datasets están en la lista de recursos del bloque 6.
 2. Créalo en **LearningML**: clases, ejemplos, aprender y **evaluar con datos nuevos** que no hayas usado para entrenar.
 3. (Opcional) Programa la aplicación con el **Scratch de LearningML**.
 4. Ve **ampliando el conjunto de datos** y comprueba si el modelo mejora.
