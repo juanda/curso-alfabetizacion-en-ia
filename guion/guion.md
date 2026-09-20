@@ -378,8 +378,8 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 **Recursos de las demostraciones y de las tareas** (descárgalos antes de la sesión y súbelos también a la plataforma):
 
 - **El asistente virtual**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) (lámpara y ventilador) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip) (una lista de frases por clase).
-- **Flípalo en colores con el camaleón**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) (el camaleón con sus disfraces de colores) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) (imágenes de cuatro colores y de prueba).
-- **Reconoce los estilos pictóricos**: [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) (cinco estilos y una carpeta de imágenes de prueba).
+- **Flípalo en colores con el camaleón**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) (el camaleón con sus disfraces de colores) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) (imágenes de cuatro colores y de prueba), más el [vídeo tutorial](https://www.youtube.com/watch?v=mhPT4NPPGVo).
+- **Reconoce los estilos pictóricos**: [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) (cinco estilos y una carpeta de imágenes de prueba), más los vídeos [parte 1](https://www.youtube.com/watch?v=WuHNlfoPjis) y [parte 2](https://www.youtube.com/watch?v=CLtLjtStw4A) de «Programando con Jara. Estilos pictóricos».
 - **Los cuadrantes matemáticos**: no necesita recursos; los puntos se escriben a mano.
 
 ## Ejemplo 1 · Texto: el asistente virtual
@@ -405,7 +405,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/estilos.png){width=95%}
 
-**Enunciado.** Un modelo que reconoce el estilo de una obra pictórica. El [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) propone cinco estilos: **cubismo, expresionismo, impresionismo, pop y realismo**.
+**Enunciado.** Un modelo que reconoce el estilo de una obra pictórica. El [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) propone cinco estilos: **cubismo, expresionismo, impresionismo, pop y realismo**. **Vídeos**: [parte 1](https://www.youtube.com/watch?v=WuHNlfoPjis) y [parte 2](https://www.youtube.com/watch?v=CLtLjtStw4A).
 
 **Paso a paso.**
 
@@ -420,7 +420,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/camaleon.png){width=60%}
 
-**Enunciado.** Un camaleón que toma el color de lo que ve: una aplicación que **identifica colores** con un modelo de imágenes y se conecta a un sprite de camaleón en Scratch. **Recursos**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip).
+**Enunciado.** Un camaleón que toma el color de lo que ve: una aplicación que **identifica colores** con un modelo de imágenes y se conecta a un sprite de camaleón en Scratch. **Recursos**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip), [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) y [vídeo](https://www.youtube.com/watch?v=mhPT4NPPGVo).
 
 **Paso a paso.**
 
@@ -684,23 +684,23 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 
 ## Anexo D · Glosario
 
-**Agente de IA**: sistema que, a partir de un objetivo, decide y ejecuta acciones por su cuenta (navegar, programar, escribir correos…).
-**AGI**: inteligencia artificial general; sistema hipotético que iguala o supera a las personas en casi cualquier tarea intelectual.
-**Algoritmo de ML** (*el genio*): procedimiento que analiza los datos y construye (ajusta) un modelo. Ej.: redes neuronales, KNN.
-**Alucinación**: contenido inventado que el modelo presenta como verdadero.
-**Clase / etiqueta**: categoría en la que se clasifican los datos.
-**Conjunto de datos (dataset)**: ejemplos, con sus etiquetas, con los que se entrena un modelo.
-**Deuda cognitiva**: coste, en términos de aprendizaje, de delegar en una herramienta el esfuerzo mental sin aprender a cambio.
-**Descarga cognitiva**: delegar en una herramienta parte del esfuerzo mental de una tarea.
-**Generalización**: capacidad de un modelo para acertar con datos que no ha visto.
-***Hard fun***: diversión desafiante; es divertido hacer cosas difíciles si tienen sentido.
-**LLM**: modelo de lenguaje de gran tamaño.
-**Modelo de ML** (*la máquina*): conjunto de reglas, inducidas automáticamente, que permite clasificar o predecir; una vez ajustado ya no necesita al algoritmo.
-**n-grama**: secuencia de *n* palabras consecutivas.
-***One-hot encoding***: codificación de un texto como lista de unos y ceros según las palabras de un diccionario.
-**Prompt**: texto inicial que se da a un modelo generativo.
-**Sesgo**: distorsión del modelo por datos desequilibrados, incompletos o prejuiciosos.
-**Temperatura**: parámetro que regula cuánto se aleja el modelo de la palabra más probable al elegir la siguiente.
+- **Agente de IA**: sistema que, a partir de un objetivo, decide y ejecuta acciones por su cuenta (navegar, programar, escribir correos…).
+- **AGI**: inteligencia artificial general; sistema hipotético que iguala o supera a las personas en casi cualquier tarea intelectual.
+- **Algoritmo de ML** (*el genio*): procedimiento que analiza los datos y construye (ajusta) un modelo. Ej.: redes neuronales, KNN.
+- **Alucinación**: contenido inventado que el modelo presenta como verdadero.
+- **Clase / etiqueta**: categoría en la que se clasifican los datos.
+- **Conjunto de datos (dataset)**: ejemplos, con sus etiquetas, con los que se entrena un modelo.
+- **Deuda cognitiva**: coste, en términos de aprendizaje, de delegar en una herramienta el esfuerzo mental sin aprender a cambio.
+- **Descarga cognitiva**: delegar en una herramienta parte del esfuerzo mental de una tarea.
+- **Generalización**: capacidad de un modelo para acertar con datos que no ha visto.
+- ***Hard fun***: diversión desafiante; es divertido hacer cosas difíciles si tienen sentido.
+- **LLM**: modelo de lenguaje de gran tamaño.
+- **Modelo de ML** (*la máquina*): conjunto de reglas, inducidas automáticamente, que permite clasificar o predecir; una vez ajustado ya no necesita al algoritmo.
+- **n-grama**: secuencia de *n* palabras consecutivas.
+- ***One-hot encoding***: codificación de un texto como lista de unos y ceros según las palabras de un diccionario.
+- **Prompt**: texto inicial que se da a un modelo generativo.
+- **Sesgo**: distorsión del modelo por datos desequilibrados, incompletos o prejuiciosos.
+- **Temperatura**: parámetro que regula cuánto se aleja el modelo de la palabra más probable al elegir la siguiente.
 
 ## Anexo E · Tareas para la plataforma (LMS)
 
@@ -718,7 +718,7 @@ Las actividades no se hacen en clase: se proponen como tareas que los docentes r
 
 ### Tarea 2 · Crea un modelo con LearningML (≈ 60 min)
 
-1. Elige **uno de los cuatro ejemplos** de la sesión (asistente virtual, estilos pictóricos, camaleón, cuadrantes) o **el modelo que diseñaste en la tarea 1**. Los sprites y datasets están en la lista de recursos del bloque 6.
+1. Elige **uno de los cuatro ejemplos** de la sesión (asistente virtual, estilos pictóricos, camaleón, cuadrantes) o **el modelo que diseñaste en la tarea 1**. Los sprites, datasets y vídeos están en la lista de recursos del bloque 6.
 2. Créalo en **LearningML**: clases, ejemplos, aprender y **evaluar con datos nuevos** que no hayas usado para entrenar.
 3. (Opcional) Programa la aplicación con el **Scratch de LearningML**.
 4. Ve **ampliando el conjunto de datos** y comprueba si el modelo mejora.

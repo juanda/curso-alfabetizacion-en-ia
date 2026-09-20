@@ -731,7 +731,7 @@ Cuatro modelos, cuatro tipos de datos
    - Los rasgos de cada estilo, para poder enseñarlos
    - Que un mal conjunto de datos genera **errores y sesgos**
 
-<div class="aviso">Recurso: <a href="https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip">dataset de estilos pictóricos</a></div>
+<div class="aviso">Recurso: <a href="https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip">dataset</a> · Vídeos: <a href="https://www.youtube.com/watch?v=WuHNlfoPjis">parte 1</a> · <a href="https://www.youtube.com/watch?v=CLtLjtStw4A">parte 2</a></div>
 
 ---
 
@@ -746,7 +746,7 @@ Cuatro modelos, cuatro tipos de datos
 - En Scratch, el **camaleón toma el color** que reconoce
 - Pregunta: ¿qué pasa con **poca luz**? ¿con **otros fondos**?
 
-<div class="aviso">Recursos: <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip">sprites</a> · <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip">dataset</a></div>
+<div class="aviso">Recursos: <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip">sprites</a> · <a href="https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip">dataset</a> · <a href="https://www.youtube.com/watch?v=mhPT4NPPGVo">vídeo</a></div>
 
 ---
 
