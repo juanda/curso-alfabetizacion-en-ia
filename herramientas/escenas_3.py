@@ -253,18 +253,19 @@ def cobertura():
 
 
 def pixeles():
-    s = Sketch(1100, 560, 62)
+    s = Sketch(1100, 575, 62)
     s.rect(30, 120, 250, 250, "white", r=12, sw=3)
     digit(s, 155, 245, 7, 190, wob=.03, sw=12, rot=.02)
     s.text(155, 410, "lo que vemos", 30, font="note")
     s.arrow(300, 245, 400, 245, sw=4)
-    g = ["9999990", "0000090", "0000900", "0009000", "0090000", "0090000", "0900000"]
+    g = ["1111110", "0000010", "0000100", "0001000", "0010000", "0010000", "0100000"]
     for r_, row in enumerate(g):
         for c_, v in enumerate(row):
             x, y = 430 + c_ * 88, 80 + r_ * 56
             s.rect(x, y, 84, 52, "#4b4b4b" if v != "0" else "white", r=2, sw=1.8, dbl=False)
             s.text(x + 42, y + 37, v, 32, font="title", color="white" if v != "0" else "#9a9a9a")
-    s.text(740, 530, "lo que ve la computadora: números", 32, font="note")
+    s.text(740, 522, "lo que ve la computadora: ceros y unos", 32, font="note")
+    s.text(740, 552, "(0 = blanco · 1 = tinta)", 26, font="note")
     return s
 
 
