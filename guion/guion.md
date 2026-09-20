@@ -14,8 +14,8 @@ lang: es
 
 LearningML y Glass Parrot como puerta de entrada a la alfabetización en inteligencia artificial
 
-**Juan David Rodríguez García**
-Curso de IA para docentes · 21 de septiembre de 2026
+**Juan David Rodríguez García**\
+Curso de IA para docentes
 
 ![](../presentacion/img/portada.png){width=70%}
 
@@ -380,7 +380,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 - **El asistente virtual**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) (lámpara y ventilador) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip) (una lista de frases por clase).
 - **Flípalo en colores con el camaleón**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) (el camaleón con sus disfraces de colores) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) (imágenes de cuatro colores y de prueba), más el [vídeo tutorial](https://www.youtube.com/watch?v=mhPT4NPPGVo).
 - **Reconoce los estilos pictóricos**: [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) (cinco estilos y una carpeta de imágenes de prueba), más los vídeos [parte 1](https://www.youtube.com/watch?v=WuHNlfoPjis) y [parte 2](https://www.youtube.com/watch?v=CLtLjtStw4A) de «Programando con Jara. Estilos pictóricos».
-- **Los cuadrantes matemáticos**: no necesita recursos; los puntos se escriben a mano.
+- **Los cuadrantes matemáticos**: no necesita ficheros; los puntos se escriben a mano. Como guía, la [propuesta didáctica de Luis M. Iglesias](https://matematicas11235813.luismiglesias.es/2022/06/19/propuesta-didactica-inteligencia-artificial-con-learningml-modelo-numerico-matematicas-puntos-coordenadas-y-cuadrantes/).
 
 ## Ejemplo 1 · Texto: el asistente virtual
 
@@ -436,6 +436,8 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 ![](../presentacion/img/cuadrantes.png){width=70%}
 
 **Enunciado.** Una aplicación donde el usuario introduce las coordenadas de un punto del plano y el sistema reconoce a qué **cuadrante** pertenece (a partir de la versión 1.3, LearningML permite el reconocimiento de conjuntos numéricos).
+
+**Propuesta didáctica.** Este ejemplo cuenta con una propuesta para el aula de Matemáticas, «[¿A qué cuadrante pertenece?](https://matematicas11235813.luismiglesias.es/2022/06/19/propuesta-didactica-inteligencia-artificial-con-learningml-modelo-numerico-matematicas-puntos-coordenadas-y-cuadrantes/)», de Luis M. Iglesias (2022, blog *MatemáTICas: 1, 1, 2, 3, 5, 8, 13…*). Crea en LearningML un modelo numérico con datos de dos columnas y cuatro categorías (una por cuadrante), lo alimenta con una docena de ejemplos por categoría, lo entrena, lo pone a prueba y añade un programa en Scratch asociado al modelo. La entrada incluye un vídeo con la explicación paso a paso.
 
 **Paso a paso.**
 

@@ -24,7 +24,7 @@ LearningML y Glass Parrot como puerta de entrada
 <div class="autor">
 
 **Juan David Rodríguez García**
-Curso de IA para docentes · 21 de septiembre de 2026
+Curso de IA para docentes
 
 </div>
 
@@ -761,6 +761,8 @@ Cuatro modelos, cuatro tipos de datos
 - ¿Cuántos puntos? ¿**dónde**?
 - Si solo entrenas con puntos pequeños… **falla lejos**
 - Los puntos sobre los **ejes**: ¿qué decidimos?
+
+<div class="aviso">Propuesta didáctica: <a href="https://matematicas11235813.luismiglesias.es/2022/06/19/propuesta-didactica-inteligencia-artificial-con-learningml-modelo-numerico-matematicas-puntos-coordenadas-y-cuadrantes/">¿A qué cuadrante pertenece?</a> (L. M. Iglesias)</div>
 
 ---
 
