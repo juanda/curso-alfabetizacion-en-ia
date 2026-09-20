@@ -1,0 +1,78 @@
+/* @theme alfabetizacion */
+/* Tema para la sesión «Alfabetización en IA». Boceto a mano: papel crema, rotulador y tipografías manuscritas.
+   El bloque @font-face lo añade construir.sh (fuentes incrustadas en base64: Patrick Hand, Kalam y Caveat, licencia SIL OFL). */
+
+section {
+  width: 1280px; height: 720px;
+  background: #fffdf6; color: #2a2a2a;
+  font-family: 'Patrick Hand', 'Comic Sans MS', cursive;
+  font-size: 34px; line-height: 1.28;
+  padding: 52px 70px 74px 70px;
+  justify-content: flex-start;
+}
+section::after { font-family: 'Patrick Hand', cursive; font-size: 22px; color: #8a867c; right: 34px; bottom: 22px; }
+footer { position: absolute; font-family: 'Patrick Hand', cursive; font-size: 19px; color: #8a867c; left: 70px; bottom: 22px; }
+
+h1, h2, h3 { font-family: 'Kalam', 'Patrick Hand', cursive; font-weight: 700; color: #2a2a2a; margin: 0; }
+h1 { font-size: 68px; line-height: 1.1; margin-bottom: .35em; }
+h2 { font-size: 50px; line-height: 1.12; margin-bottom: .55em; position: relative; display: inline-block; isolation: isolate; align-self: flex-start; }
+h2::after { content: ''; position: absolute; left: -8px; right: -8px; bottom: 4px; height: 16px; background: #ffe58a; z-index: -1; border-radius: 8px; transform: rotate(-.7deg); }
+h3 { font-size: 38px; margin: .3em 0 .2em; color: #c0492c; }
+
+p { margin: .35em 0; }
+ul, ol { margin: .2em 0; padding-left: 1.1em; }
+li { margin: .22em 0; }
+li::marker { color: #f0645a; }
+ul ul li::marker { color: #6fb3e0; }
+strong { font-weight: 400; text-decoration: underline; text-decoration-color: #ffe17a; text-decoration-thickness: .3em; text-underline-offset: -.1em; text-decoration-skip-ink: none; }
+em { color: #b0392a; font-style: normal; }
+a { color: #2b6cb0; text-decoration: none; border-bottom: 2px dotted #2b6cb0; }
+code { font-family: 'Patrick Hand', cursive; background: #f1ecdc; border-radius: 6px; padding: 0 .2em; }
+
+blockquote { margin: .4em 0; padding: .1em .7em; border-left: 9px solid #a6e05a; font-family: 'Kalam', cursive; font-size: .95em; background: #f6f8e6; border-radius: 0 14px 14px 0; }
+blockquote p { margin: .25em 0; }
+blockquote footer, blockquote cite { font-family: 'Caveat', cursive; font-size: 1em; color: #6a655a; }
+
+table { border-collapse: separate; border-spacing: 0; font-size: .78em; margin: .3em 0; width: 100%; }
+th { background: #ffd95a; font-family: 'Kalam', cursive; font-weight: 700; text-align: left; padding: .3em .6em; border: 2.5px solid #2a2a2a; }
+td { background: #fff; padding: .28em .6em; border: 2.5px solid #2a2a2a; }
+th, td { border-radius: 8px; }
+tr:nth-child(even) td { background: #faf6e8; }
+
+img { background: transparent; }
+section.centro { text-align: center; }
+section.centro img { display: block; margin: 0 auto; }
+section.centro h2 { align-self: center; }
+section.compacta { font-size: 30px; }
+section.grande { font-size: 38px; }
+section.grande li { margin: .3em 0; }
+section.pequena { font-size: 26px; }
+section.nota-fuente em { color: inherit; font-style: italic; }
+section.nota-fuente p:last-child { font-size: 22px; color: #6a655a; }
+
+/* Portada */
+section.portada { padding-top: 90px; }
+section.portada h1 { font-size: 78px; }
+section.portada .sub { font-family: 'Caveat', cursive; font-size: 46px; color: #c0492c; margin: -.2em 0 .8em; line-height: 1.05; }
+section.portada .autor { font-size: 30px; color: #4a463c; line-height: 1.35; }
+
+/* Separadores de sección */
+section.seccion { justify-content: center; padding-left: 110px; }
+section.seccion h1 { font-size: 88px; margin: 0 0 .2em; }
+section.seccion .num { display: inline-block; font-family: 'Kalam', cursive; font-size: 90px; width: 150px; height: 150px; line-height: 150px; text-align: center; border: 6px solid #2a2a2a; border-radius: 58% 42% 55% 45% / 46% 58% 42% 54%; background: #fffdf6; margin-bottom: 26px; }
+section.seccion p { font-family: 'Caveat', cursive; font-size: 48px; color: #3a362c; margin: 0; }
+section.seccion footer, section.seccion::after { color: #5c574c; }
+
+/* Citas / preguntas grandes */
+section.cita { justify-content: center; }
+section.cita blockquote { font-size: 54px; line-height: 1.2; }
+section.pregunta h2 { font-size: 46px; }
+section.pregunta ol li { margin: .5em 0; }
+
+/* Llamadas */
+.caja { background: #fff; border: 3px solid #2a2a2a; border-radius: 16px; padding: .3em .8em; margin: .4em 0; }
+.aviso { background: #fff3c4; border: 3px dashed #d9a400; border-radius: 16px; padding: .25em .8em; font-size: .8em; }
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.tres { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.tarjeta { background: #fff; border: 3px solid #2a2a2a; border-radius: 18px; padding: .3em .7em; }
+.tarjeta h3 { margin-top: .1em; }

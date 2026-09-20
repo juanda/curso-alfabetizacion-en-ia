@@ -1,0 +1,31 @@
+@page { size: A4; margin: 20mm 17mm 22mm 17mm;
+  @bottom-center { content: counter(page); font-family: 'Patrick Hand', cursive; font-size: 10pt; color: #8a867c; }
+  @bottom-left { content: "CC BY-NC 4.0 · Juan David Rodríguez García"; font-family: 'Patrick Hand', cursive; font-size: 9pt; color: #8a867c; } }
+@page :first { @bottom-center { content: none; } @bottom-left { content: none; } }
+html { background: #fff; }
+body { font-family: 'Bitstream Charter', 'Charter', Georgia, 'DejaVu Serif', serif; font-size: 10.6pt; line-height: 1.5; color: #222; max-width: none; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Kalam', 'Patrick Hand', cursive; color: #222; line-height: 1.15; break-after: avoid; }
+h1 { font-size: 26pt; margin: 0 0 .5em; padding-bottom: .15em; border-bottom: 5px solid #ffd95a; break-before: page; }
+h2 { font-size: 17pt; margin: 1.5em 0 .5em; display: inline-block; text-decoration: underline; text-decoration-color: #ffe9a0; text-decoration-thickness: .3em; text-underline-offset: -.1em; text-decoration-skip-ink: none; }
+h3 { font-size: 13pt; margin: 1.2em 0 .3em; color: #b0392a; }
+p { margin: .55em 0; text-align: left; }
+a { color: #1f5fa0; text-decoration: none; word-break: break-all; }
+img { max-width: 100%; height: auto; display: block; margin: .8em auto; }
+blockquote { margin: .9em 0; padding: .2em 1em; border-left: 6px solid #a6e05a; background: #f6f8e6; border-radius: 0 12px 12px 0; }
+blockquote p { margin: .5em 0; }
+table { border-collapse: collapse; width: 100%; margin: .9em 0; font-size: 9.6pt; break-inside: avoid; }
+th { background: #ffd95a; font-family: 'Kalam', cursive; text-align: left; }
+th, td { border: 1.6px solid #333; padding: 4px 7px; vertical-align: top; }
+tr:nth-child(even) td { background: #faf6e8; }
+code { font-family: 'Patrick Hand', cursive; background: #f1ecdc; padding: 0 3px; border-radius: 4px; }
+ul, ol { margin: .4em 0; padding-left: 1.4em; }
+li { margin: .25em 0; }
+ul.task-list, ul:has(input[type=checkbox]) { list-style: none; padding-left: .3em; }
+.aviso { background: #fff3c4; border: 2px dashed #d9a400; border-radius: 12px; padding: .1em 1em; margin: 1em 0; font-size: 9.8pt; break-inside: avoid; }
+.salto { break-after: page; height: 0; }
+.portada-guion { text-align: center; padding-top: 22mm; }
+.portada-guion h1 { font-size: 40pt; border: none; break-before: auto; margin-bottom: 0; }
+.portada-guion h2 { font-family: 'Caveat', cursive; font-size: 26pt; background: none; color: #c0492c; margin: .1em 0 1em; }
+.portada-guion p { text-align: center; }
+.portada-guion img { margin: 1em auto; }
+.licencia { font-size: 9.5pt; color: #555; border-top: 1px solid #ccc; padding-top: 1em; margin-top: 2em; }
