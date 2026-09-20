@@ -521,9 +521,10 @@ def warning(s, cx, cy, sc=1.0):
     s.text(cx, cy + 22 * k, "!", 40 * k, font="title")
 
 
-def digit(s, cx, cy, d, size=60, wob=0.08, sw=5, color=INK, rot=None):
-    """Dibuja un dígito a 'mano alzada' con variaciones aleatorias. Esqueletos simplificados."""
-    sk = DIGITS[d]
+def digit(s, cx, cy, d, size=60, wob=0.08, sw=5, color=INK, rot=None, var=None):
+    """Dibuja un dígito a 'mano alzada' con variaciones aleatorias. Esqueletos simplificados.
+    var=None usa el esqueleto base (comportamiento original); var=i elige otra forma de escribir el mismo dígito."""
+    sk = DIGITS[d] if var is None else ([DIGITS[d]] + DIGITS_VAR.get(d, []))[var % (1 + len(DIGITS_VAR.get(d, [])))]
     r = s.r
     ang = (rot if rot is not None else r.uniform(-0.28, 0.28))
     sx, sy = r.uniform(0.85, 1.1), r.uniform(0.9, 1.12)
@@ -599,3 +600,18 @@ def maquina(s, cx, cy, sc=1.0, estado="ajustada", salida=None, color="#dedad0"):
     if estado == "ajustando":
         for (dx, dy) in ((-150, -100), (150, -104), (-158, 30)):
             s.sparks(cx + dx * k, cy + dy * k, 16 * k, 3)
+
+
+# Otras formas de escribir cada dígito (para mostrar que una clase agrupa ejemplos distintos)
+DIGITS_VAR = {
+    0: [[_circ(.5, .5, .22, .48, -1.2, -1.2 + 2 * math.pi + .25)], [_circ(.5, .5, .42, .4, -2.0, -2.0 + 2 * math.pi + .3)]],
+    1: [[[(.35, .2), (.55, .04), (.55, .96)], [(.3, .96), (.8, .96)]], [[(.5, .04), (.5, .96)]]],
+    2: [[[(.2, .15), (.75, .1), (.75, .3), (.2, .95), (.85, .95)]], [[(.15, .3), (.4, .05), (.75, .2), (.6, .55), (.15, .95), (.85, .9)]]],
+    3: [[[(.2, .08), (.8, .08), (.45, .42), (.75, .55), (.75, .85), (.2, .95)]], [_circ(.45, .27, .28, .2, -2.5, 1.6, 8), _circ(.45, .72, .32, .24, -1.6, 2.5, 8)]],
+    4: [[[(.25, .05), (.2, .6), (.85, .6)], [(.65, .05), (.65, .96)]], [[(.3, .08), (.15, .55), (.85, .6)], [(.7, .08), (.68, .96)]]],
+    5: [[[(.8, .08), (.3, .08), (.28, .45)], [(.28, .45), (.7, .38), (.82, .65), (.62, .94), (.2, .88)]], [[(.75, .1), (.3, .1), (.25, .45), (.6, .4), (.8, .62), (.6, .92), (.2, .8)]]],
+    6: [[[(.7, .06), (.35, .4), (.2, .7)], _circ(.48, .7, .28, .25, 0, 2 * math.pi, 10)], [[(.65, .05), (.3, .45), (.22, .7), (.4, .95), (.7, .85), (.72, .6), (.45, .5), (.25, .65)]]],
+    7: [[[(.15, .08), (.85, .08), (.45, .96)], [(.3, .5), (.7, .5)]], [[(.2, .15), (.5, .05), (.85, .1), (.55, .5), (.4, .96)]]],
+    8: [[[(.5, .05), (.25, .2), (.5, .48), (.78, .72), (.5, .95), (.22, .75), (.5, .48), (.75, .2), (.5, .05)]], [_circ(.5, .25, .22, .2, 0, 2 * math.pi, 10), _circ(.5, .7, .32, .27, 0, 2 * math.pi, 10)]],
+    9: [[_circ(.5, .3, .28, .26, 0, 2 * math.pi, 10), [(.77, .3), (.72, .96)]], [_circ(.5, .3, .27, .25, 0, 2 * math.pi, 10) + [(.77, .35), (.75, .7), (.55, .95), (.3, .9)]]],
+}

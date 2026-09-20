@@ -190,15 +190,18 @@ def pipeline():
 
 
 def clases():
-    s = Sketch(1300, 540, 59)
+    s = Sketch(1300, 545, 59)
+    s.text(650, 34, "10 clases · cada una con su etiqueta", 36, font="title")
     for d in range(10):
         c, r = d % 5, d // 5
-        x, y = 140 + c * 255, 140 + r * 240
-        s.rect(x - 95, y - 85, 190, 200, "white", r=14, sw=3)
-        digit(s, x, y - 15, d, 100, wob=.06, sw=7, rot=0.05)
-        s.rect(x - 70, y + 60, 140, 42, "yellow", r=10, sw=2.8)
-        s.text(x, y + 92, "clase " + str(d), 28, font="title")
-    s.text(650, 30, "10 clases · cada una con su etiqueta", 36, font="title")
+        x, y = 20 + c * 250, 52 + r * 240
+        s.rect(x, y, 236, 226, "white", r=14, sw=3)
+        for i in range(4):
+            cx = x + 64 + (i % 2) * 108
+            cy = y + 44 + (i // 2) * 76
+            digit(s, cx + s.j(5), cy + s.j(3), d, s.r.uniform(46, 58), wob=.06, sw=5, rot=s.r.uniform(-.3, .3), var=i)
+        s.rect(x + 48, y + 176, 140, 38, "yellow", r=10, sw=2.8)
+        s.text(x + 118, y + 205, "clase " + str(d), 26, font="title")
     return s
 
 

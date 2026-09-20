@@ -524,7 +524,9 @@ Aprender de ejemplos en lugar de seguir reglas
 
 ## Clases o etiquetas
 
-![w:1140](img/clases.png)
+![w:1020](img/clases.png)
+
+**Una clase** = muchos ejemplos distintos con **la misma etiqueta**
 
 ---
 
