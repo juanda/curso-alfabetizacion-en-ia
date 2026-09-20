@@ -40,7 +40,7 @@ def digitos_variados():
 
 
 def ml_vs_tradicional():
-    s = Sketch(1300, 640, 53)
+    s = Sketch(1300, 700, 53)
     # arriba
     s.text(30, 50, "Programación tradicional", 38, font="title", anchor="start")
     caja(s, 130, 130, 210, 70, "REGLAS", "yellow", 30); s.text(260, 140, "+", 40, font="title")
@@ -52,37 +52,51 @@ def ml_vs_tradicional():
     s.line(30, 230, 1270, 230, sw=3, dbl=True)
     # abajo
     s.text(30, 300, "Machine Learning", 38, font="title", anchor="start")
-    caja(s, 130, 400, 210, 70, "DATOS", "blue", 30); s.text(260, 410, "+", 40, font="title")
-    caja(s, 390, 400, 210, 70, "RESPUESTAS", "green", 26)
-    s.arrow(500, 400, 600, 400, sw=4)
-    caja(s, 720, 400, 210, 90, "algoritmo\nde ML", "purple", 28)
-    s.arrow(830, 400, 930, 400, sw=4)
-    caja(s, 1050, 400, 230, 70, "REGLAS", "yellow", 30)
-    s.text(1050, 458, "(el modelo)", 26, font="note")
-    genie(s, 720, 490, 0.28, "happy", "up")
-    s.text(650, 615, "en ML las reglas no las escribimos: las descubre el algoritmo a partir de ejemplos", 30, font="note")
+    caja(s, 130, 420, 210, 70, "DATOS", "blue", 30); s.text(260, 430, "+", 40, font="title")
+    caja(s, 390, 420, 210, 70, "RESPUESTAS", "green", 26)
+    s.arrow(500, 420, 600, 420, sw=4)
+    genie(s, 700, 340, 0.55, "think", "ajusta")
+    s.text(720, 540, "el genio =", 28, font="note")
+    s.text(720, 574, "algoritmo de ML", 34, font="title")
+    s.arrow(860, 420, 940, 420, sw=4)
+    maquina(s, 1090, 430, 0.5, "ajustada")
+    s.text(1090, 540, "la máquina =", 28, font="note")
+    s.text(1090, 574, "el MODELO (las reglas)", 34, font="title")
+    s.text(650, 672, "el genio analiza los datos y ajusta la máquina: nosotros no escribimos las reglas", 30, font="note")
     return s
 
 
-def genio_maquina():
+def maquina_modelo():
     s = Sketch(W, H, 54)
-    s.rect(270, 150, 360, 300, "gray", r=30)
-    s.rect(310, 190, 280, 210, "#cfe6f7", r=90, sw=3.4)
-    genie(s, 450, 230, 0.55, "happy", "up")
-    gear(s, 300, 470, 26, "yellow"); gear(s, 606, 470, 26, "orange")
-    # entrada
-    s.rect(30, 220, 110, 120, "white", r=10)
-    digit(s, 85, 280, 7, 80, wob=0.05, sw=6, rot=0.1)
-    s.arrow(150, 280, 268, 290, sw=4)
-    s.text(85, 200, "entrada", 30, font="note")
-    # salida
-    s.arrow(632, 290, 745, 280, sw=4)
-    s.rect(750, 220, 120, 120, "green", r=10)
-    s.text(810, 300, "7", 80, font="title")
-    s.text(810, 200, "salida", 30, font="note")
-    s.text(810, 370, "93 %", 32, font="title")
-    s.text(450, 110, "EL MODELO", 44, font="title")
-    s.text(450, 520, "un genio que ha aprendido a reconocer, no a obedecer reglas", 28, font="note")
+    s.text(450, 70, "EL MODELO", 46, font="title")
+    maquina(s, 450, 300, 1.15, "ajustada", "7")
+    s.rect(30, 230, 110, 120, "white", r=10)
+    digit(s, 85, 290, 7, 80, wob=0.05, sw=6, rot=0.1)
+    s.arrow(150, 290, 262, 300, sw=4)
+    s.text(85, 205, "entrada", 30, font="note")
+    s.arrow(640, 290, 740, 285, sw=4)
+    s.rect(750, 230, 120, 120, "green", r=10)
+    s.text(810, 310, "7", 80, font="title")
+    s.text(810, 205, "salida", 30, font="note")
+    s.text(810, 380, "93 %", 32, font="title")
+    s.text(450, 528, "una máquina ya ajustada: reconoce datos parecidos, pero distintos", 28, font="note")
+    return s
+
+
+def genio_ajusta():
+    s = Sketch(1100, 560, 154)
+    for i, (d, e) in enumerate(((4, "4"), (7, "7"), (9, "9"))):
+        y = 100 + i * 130
+        s.rect(30, y, 100, 100, "white", r=8, sw=2.8)
+        digit(s, 80, y + 40, d, 62, wob=.06, sw=5)
+        s.rect(42, y + 76, 76, 32, "yellow", r=8, sw=2.6); s.text(80, y + 100, "es un " + e, 20, font="title")
+    s.text(80, 60, "datos de ejemplo", 26, font="note")
+    s.arrow(140, 240, 290, 270, sw=4)
+    genie(s, 420, 200, 0.95, "think", "ajusta")
+    s.text(420, 490, "el genio", 34, font="title"); s.text(420, 525, "(algoritmo de ML)", 26, font="note")
+    maquina(s, 900, 300, 0.95, "ajustando", "…")
+    s.text(900, 490, "la máquina", 34, font="title"); s.text(900, 525, "(el modelo de ML)", 26, font="note")
+    s.text(640, 150, "¡ajusta!", 34, font="note", rot=-6)
     return s
 
 
@@ -98,31 +112,44 @@ def entrenamiento():
         s.text(x, 312, "es un " + e, 26, font="title")
     s.text(600, 385, "conjunto de datos (dataset): ejemplos + etiquetas", 34, font="note")
     person(s, 150, 470, 0.5, "orange", "brown", True, "happy", "point")
-    genie(s, 950, 445, 0.5, "happy", "down")
-    s.text(600, 500, "la persona recopila y etiqueta los ejemplos", 30)
+    s.text(150, 455, "", 20)
+    genie(s, 820, 425, 0.42, "happy", "cross")
+    maquina(s, 1030, 470, 0.34, "sin_ajustar")
+    s.text(925, 545, "el genio y la máquina, todavía sin ajustar", 24, font="note")
+    s.text(440, 500, "la persona recopila y etiqueta los ejemplos", 30)
     return s
 
 
 def aprendizaje():
-    s = Sketch(1300, 520, 56)
-    s.top = 70
-    xs = [220, 650, 1080]
+    s = Sketch(1400, 540, 56)
+    s.top = 60
+    xs = [182, 522, 862, 1202]
     for x in xs:
-        s.rect(x - 195, 90, 390, 380, "white", r=18, sw=3)
-    # panel 1
-    genie(s, xs[0], 220, 0.6, "sad", "down")
-    s.rect(xs[0] - 150, 130, 80, 80, "white", r=8, sw=2.8); digit(s, xs[0] - 110, 170, 7, 56, wob=.05, sw=5)
-    s.bubble(xs[0] - 10, 110, 150, 60, ["¿un 1?"], tail=(xs[0] + 20, 215), size=30, font="title")
-    s.text(xs[0], 445, "1. el modelo falla", 30, font="title")
-    # panel 2
-    gear(s, xs[1] - 40, 250, 60, "yellow"); gear(s, xs[1] + 50, 200, 42, "orange"); gear(s, xs[1] + 60, 300, 30, "teal")
-    s.text(xs[1], 445, "2. el algoritmo ajusta", 30, font="title")
-    s.text(xs[1], 130, "«¡ajusta!»", 32, font="note")
-    # panel 3
-    genie(s, xs[2], 220, 0.6, "happy", "up")
-    s.bubble(xs[2] - 190, 110, 130, 60, ["¡un 7!"], tail=(xs[2] - 90, 215), size=30, font="title")
-    s.text(xs[2], 445, "3. ahora acierta", 30, font="title")
-    s.arrow(430, 280, 450, 280, sw=4); s.arrow(860, 280, 880, 280, sw=4)
+        s.rect(x - 165, 90, 330, 400, "white", r=18, sw=3)
+    # 1. se presenta un ejemplo y falla
+    s.rect(xs[0] - 140, 110, 80, 80, "white", r=8, sw=2.8); digit(s, xs[0] - 100, 150, 7, 56, wob=.05, sw=5)
+    s.text(xs[0] - 100, 208, "es un 7", 22, font="note")
+    s.arrow(xs[0] - 55, 150, xs[0] - 12, 230, sw=3, bend=10)
+    maquina(s, xs[0] + 10, 320, 0.5, "sin_ajustar", "¿1?")
+    for j, ln in enumerate(wrap('1. se presenta un ejemplo… y falla', 22)):
+        s.text(xs[0], 440 + j * 28, ln, 24, font="title")
+    # 2. el genio ajusta
+    genie(s, xs[1] - 90, 190, 0.5, "think", "ajusta")
+    maquina(s, xs[1] + 50, 330, 0.5, "ajustando", "…")
+    for j, ln in enumerate(wrap('2. el genio ajusta los mandos', 22)):
+        s.text(xs[1], 440 + j * 28, ln, 24, font="title")
+    # 3. acierta
+    maquina(s, xs[2], 290, 0.6, "ajustada", "7")
+    s.text(xs[2] - 96, 140, "es un 7", 22, font="note")
+    s.text(xs[2] + 80, 140, "✓", 44, font="title", color="#2e9e2e")
+    for j, ln in enumerate(wrap('3. ahora acierta… y se repite', 22)):
+        s.text(xs[2], 440 + j * 28, ln, 24, font="title")
+    # 4. ya no hace falta
+    maquina(s, xs[3] - 40, 310, 0.5, "ajustada", "7")
+    genie(s, xs[3] + 100, 250, 0.3, "happy", "up")
+    s.bubble(xs[3] - 150, 110, 200, 56, ["¡ya no me", "necesitáis!"], tail=(xs[3] + 90, 230), size=20)
+    for j, ln in enumerate(wrap('4. ajustada: el genio ya no hace falta', 22)):
+        s.text(xs[3], 440 + j * 28, ln, 24, font="title")
     return s
 
 
@@ -135,8 +162,8 @@ def evaluacion():
         digit(s, x, 170, d, 76, wob=.08, sw=6)
         s.text(x, 275, "3 8 6".split()[i], 40, font="title")
         s.text(x + 44, 220, ("✓", "✓", "✗")[i], 36, font="title", color=("#2e9e2e", "#2e9e2e", "#d03030")[i])
-    s.text(290, 320, "datos que el modelo NO ha visto", 30, font="note")
-    genie(s, 700, 190, 0.6, "think", "cross")
+    s.text(290, 320, "datos que la máquina NO ha visto", 30, font="note")
+    maquina(s, 700, 210, 0.6, "ajustada", "¿?")
     s.ellipse(700, 470, 110, 62, "green")
     s.text(700, 484, "93 %", 56, font="title")
     s.text(700, 545, "precisión: es probabilística", 26, font="note")
@@ -146,19 +173,19 @@ def evaluacion():
 
 
 def pipeline():
-    s = Sketch(1300, 460, 58)
-    pasos = [("1", "Entrenamiento", "recopilar y etiquetar ejemplos", "yellow"), ("2", "Aprendizaje", "el algoritmo construye el modelo", "purple"),
-             ("3", "Evaluación", "probar con datos nuevos", "green"), ("4", "Uso", "el modelo dentro de una aplicación", "blue")]
+    s = Sketch(1300, 500, 58)
+    pasos = [("1", "Entrenamiento", "recopilar y etiquetar ejemplos", "yellow"), ("2", "Aprendizaje", "el genio (algoritmo) ajusta la máquina", "purple"),
+             ("3", "Evaluación", "probar la máquina con datos nuevos", "green"), ("4", "Uso", "la máquina en una aplicación: el genio ya no hace falta", "blue")]
     for i, (n, t, d, c) in enumerate(pasos):
         x = 170 + i * 320
-        s.rect(x - 140, 90, 280, 260, c, r=22)
+        s.rect(x - 140, 90, 280, 310, c, r=22)
         s.ellipse(x - 100, 90, 24, 24, "white"); s.text(x - 100, 100, n, 30, font="title")
         s.text(x, 160, t, 38, font="title")
-        for j, ln in enumerate(wrap(d, 18)):
-            s.text(x, 215 + j * 32, ln, 28)
+        for j, ln in enumerate(wrap(d, 19)):
+            s.text(x, 212 + j * 32, ln, 28)
         if i < 3:
-            s.arrow(x + 145, 220, x + 175, 220, sw=4)
-    s.text(650, 415, "primero enseñamos, luego comprobamos, y solo entonces usamos", 32, font="note")
+            s.arrow(x + 145, 245, x + 175, 245, sw=4)
+    s.text(650, 450, "primero enseñamos, luego comprobamos, y solo entonces usamos", 32, font="note")
     return s
 
 
@@ -268,7 +295,8 @@ def lml_partes():
     s = Sketch(1300, 520, 64)
     xs = [230, 650, 1070]
     window(s, xs[0] - 190, 60, 380, 300, "learningml.org", "white", "blue")
-    genie(s, xs[0], 200, 0.4, "happy", "up")
+    genie(s, xs[0] - 75, 190, 0.34, "happy", "ajusta")
+    maquina(s, xs[0] + 90, 230, 0.2, "ajustada")
     s.text(xs[0], 320, "LearningML", 36, font="title")
     window(s, xs[1] - 190, 60, 380, 300, "editor de modelos", "white", "green")
     for i, (t, c) in enumerate((("clase A", "yellow"), ("clase B", "pink"), ("clase C", "blue"))):
@@ -331,9 +359,10 @@ def clasificaciones():
 
 def ciclo():
     s = Sketch(1100, 600, 68)
-    genie(s, 550, 250, 0.55, "happy", "up")
+    genie(s, 450, 215, 0.42, "happy", "ajusta")
+    maquina(s, 640, 265, 0.34, "ajustada")
     pasos = [(550, 60, "1 · Aprendo el tema", "yellow"), (900, 220, "2 · Recopilo y clasifico\nejemplos (entrenamiento)", "orange"),
-             (830, 470, "3 · La máquina aprende\n(algoritmo → modelo)", "purple"), (270, 470, "4 · Evalúo el modelo", "green"),
+             (830, 470, "3 · El genio ajusta\nla máquina (modelo)", "purple"), (270, 470, "4 · Evalúo el modelo", "green"),
              (200, 220, "5 · Lo uso en una\naplicación (Scratch)", "blue")]
     for x, y, t, c in pasos:
         ls = t.split("\n")
@@ -360,13 +389,13 @@ def scratch_bloques():
         for j, ln in enumerate(ls):
             s.text(90 + (40 if i == 4 else 0), y + 38 + j * 34, ln.strip(), 30, anchor="start", font="body")
         y += h + 14
-    genie(s, 830, 200, 0.75, "happy", "up")
-    s.text(830, 460, "el modelo hace de «cerebro»", 28, font="note")
+    maquina(s, 830, 250, 0.6, "ajustada")
+    s.text(830, 440, "la máquina (el modelo)", 28, font="title")
+    s.text(830, 475, "hace de «cerebro»", 28, font="note")
     return s
 
-
 ESCENAS = {"prog-tradicional": prog_tradicional, "digitos-variados": digitos_variados, "ml-vs-tradicional": ml_vs_tradicional,
-           "genio-maquina": genio_maquina, "entrenamiento": entrenamiento, "aprendizaje": aprendizaje, "evaluacion": evaluacion,
+           "maquina-modelo": maquina_modelo, "genio-ajusta": genio_ajusta, "entrenamiento": entrenamiento, "aprendizaje": aprendizaje, "evaluacion": evaluacion,
            "pipeline": pipeline, "clases": clases, "balance": balance, "cobertura": cobertura, "pixeles": pixeles, "tipos-ml": tipos_ml,
            "lml-partes": lml_partes, "lml-historia": lml_historia, "construccionismo": construccionismo, "clasificaciones": clasificaciones,
            "ciclo": ciclo, "scratch-bloques": scratch_bloques}

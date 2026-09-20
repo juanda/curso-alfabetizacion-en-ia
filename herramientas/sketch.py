@@ -377,6 +377,14 @@ def genie(s, cx, cy, sc=1.0, mood="happy", arms="up"):
     elif arms == "cross":
         s.line(cx - 42 * k, cy + 60 * k, cx + 20 * k, cy + 76 * k, sw=3.6)
         s.line(cx + 42 * k, cy + 60 * k, cx - 20 * k, cy + 76 * k, sw=3.6)
+    elif arms == "ajusta":
+        # brazo derecho extendido hacia la máquina con una llave inglesa; el izquierdo en jarras
+        s.line(cx - 42 * k, cy + 60 * k, cx - 70 * k, cy + 84 * k, sw=3.6)
+        s.line(cx - 70 * k, cy + 84 * k, cx - 44 * k, cy + 100 * k, sw=3.6)
+        s.line(cx + 42 * k, cy + 56 * k, cx + 118 * k, cy + 40 * k, sw=3.6)
+        s.ellipse(cx + 122 * k, cy + 39 * k, 11 * k, 11 * k, "green", sw=3)
+        s.line(cx + 128 * k, cy + 34 * k, cx + 150 * k, cy + 8 * k, sw=6 * max(k, .6), stroke="#8a8a8a", dbl=False)
+        s.ellipse(cx + 154 * k, cy + 4 * k, 10 * k, 10 * k, "gray", sw=2.6, dbl=False)
     else:
         s.line(cx - 42 * k, cy + 60 * k, cx - 78 * k, cy + 70 * k, sw=3.6)
         s.line(cx + 42 * k, cy + 60 * k, cx + 78 * k, cy + 70 * k, sw=3.6)
@@ -552,3 +560,42 @@ def marker(s, x, y, w, h, color="yellow", op=0.75):
     """Franja de rotulador para resaltar."""
     pts = [(x, y + h * .2), (x + w, y), (x + w, y + h * .85), (x, y + h)]
     s.o.append('<path d="M{} Z" fill="{}" opacity="{}"/>'.format(" L".join("{:.1f},{:.1f}".format(*p) for p in pts), col(color), op))
+
+
+@escalado
+def maquina(s, cx, cy, sc=1.0, estado="ajustada", salida=None, color="#dedad0"):
+    """La máquina = el MODELO de ML. (cx,cy) = centro del cuerpo.
+    estado: 'sin_ajustar' (mandos al azar, luz roja), 'ajustando' (chispas, luz amarilla) o 'ajustada' (mandos con marca, luz verde).
+    salida: texto de la pantalla (p. ej. '7')."""
+    k = sc
+    # tolva de entrada
+    s.poly([(cx - 128 * k, cy - 150 * k), (cx - 28 * k, cy - 150 * k), (cx - 52 * k, cy - 92 * k), (cx - 104 * k, cy - 92 * k)], "orange", sw=3.2)
+    # patas
+    s.line(cx - 100 * k, cy + 92 * k, cx - 100 * k, cy + 116 * k, sw=4)
+    s.line(cx + 100 * k, cy + 92 * k, cx + 100 * k, cy + 116 * k, sw=4)
+    s.rect(cx - 122 * k, cy + 112 * k, 44 * k, 14 * k, "gray", r=5, sw=2.8)
+    s.rect(cx + 78 * k, cy + 112 * k, 44 * k, 14 * k, "gray", r=5, sw=2.8)
+    # cuerpo
+    s.rect(cx - 150 * k, cy - 92 * k, 300 * k, 186 * k, color, r=22)
+    # pantalla
+    s.rect(cx + 24 * k, cy - 70 * k, 108 * k, 64 * k, "#e8f6ff", r=8, sw=3)
+    if salida:
+        s.text(cx + 78 * k, cy - 22 * k, salida, 44 * k, font="title")
+    # luz
+    luz = {"sin_ajustar": "red", "ajustando": "yellow", "ajustada": "green"}[estado]
+    s.ellipse(cx + 110 * k, cy - 84 * k, 9 * k, 9 * k, luz, sw=2.6, dbl=False)
+    # engranaje decorativo
+    gear(s, cx - 96 * k, cy - 34 * k, 22 * k, "yellow")
+    # mandos
+    angs = {"sin_ajustar": (2.6, -2.3, 1.7), "ajustando": (-0.2, 0.9, -1.6), "ajustada": (-0.7, 0.4, 1.1)}[estado]
+    for i, a in enumerate(angs):
+        x, y = cx - 84 * k + i * 76 * k, cy + 44 * k
+        s.ellipse(x, y, 25 * k, 25 * k, "white", sw=3)
+        if estado == "ajustada":
+            for t in (-1.2, 0, 1.2):
+                s.line(x + math.sin(t) * 29 * k, y - math.cos(t) * 29 * k, x + math.sin(t) * 36 * k, y - math.cos(t) * 36 * k, sw=2.4, stroke="#2e9e2e", dbl=False)
+        s.line(x, y, x + math.sin(a) * 19 * k, y - math.cos(a) * 19 * k, sw=3.4, dbl=False)
+        s.dot(x, y, 3.4)
+    if estado == "ajustando":
+        for (dx, dy) in ((-150, -100), (150, -104), (-158, 30)):
+            s.sparks(cx + dx * k, cy + dy * k, 16 * k, 3)

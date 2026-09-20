@@ -10,8 +10,8 @@ def asistente():
     person(s, 110, 250, 0.9, "orange", "brown", True, "happy", "point")
     s.bubble(40, 40, 400, 90, ["«¿Podrías encender", "la lámpara, por favor?»"], tail=(120, 190), size=30, font="title")
     s.arrow(210, 300, 430, 300, sw=4)
-    genie(s, 560, 230, 0.7, "think", "cross")
-    s.text(560, 470, "modelo de texto", 30, font="title")
+    maquina(s, 560, 270, 0.5, "ajustada", "ON")
+    s.text(560, 470, "modelo de texto (la máquina)", 30, font="title")
     s.arrow(650, 300, 830, 300, sw=4)
     i_lampara(s, 920, 250, 1.6, True)
     i_ventilador(s, 1100, 260, 1.4)
@@ -44,8 +44,8 @@ def estilos():
         x = 60 + i * 300
         cuadro(s, x, 60, 250, 250, n)
         s.text(x + 125, 350, n, 32, font="title")
-    genie(s, 1130, 190, 0.6, "think", "cross")
-    s.bubble(950, 30, 300, 60, ["¿qué estilo es?"], tail=(1120, 130), size=30, font="title")
+    maquina(s, 1120, 250, 0.42, "ajustada", "?")
+    s.bubble(980, 30, 270, 60, ["¿qué estilo es?"], tail=(1110, 120), size=30, font="title")
     s.text(650, 470, "el estudiante debe aprender a distinguirlos antes de enseñar a la máquina", 32, font="note")
     s.text(650, 520, "modelo de imágenes · 3 clases", 28, font="note")
     return s
@@ -104,18 +104,14 @@ def autocompletar():
 
 def entrenamiento_llm():
     s = Sketch(1300, 640, 76)
-    # fuentes
     for i, (f, y) in enumerate(((i_libro, 100), (lambda s, x, y, k: window(s, x - 50, y - 36, 100, 72, "web"), 210), (i_doc, 320))):
-        f(s, 90, y, 1.0) if i != 1 else f(s, 90, y, 1.0)
-    s.text(90, 400, "casi todo lo\nescrito", 26, font="note")
-    s.arrow(160, 200, 350, 200, sw=4)
-    s.rect(360, 90, 300, 220, "gray", r=26)
-    gear(s, 420, 150, 30, "yellow"); gear(s, 600, 250, 30, "orange"); gear(s, 510, 200, 44, "teal")
-    s.text(510, 350, "entrenamiento", 32, font="title")
-    s.arrow(670, 200, 860, 200, sw=4)
-    genie(s, 1000, 130, 0.75, "happy", "up")
-    s.text(1000, 400, "el modelo (LLM)", 32, font="title")
-    # tira de palabras
+        f(s, 90, y, 1.0)
+    s.text(90, 400, "casi todo lo", 26, font="note"); s.text(90, 428, "escrito", 26, font="note")
+    s.arrow(160, 200, 330, 200, sw=4)
+    genie(s, 470, 130, 0.62, "think", "ajusta")
+    s.text(470, 380, "el genio", 32, font="title"); s.text(470, 412, "ajusta la máquina", 26, font="note")
+    maquina(s, 960, 220, 0.85, "ajustando", "…")
+    s.text(960, 380, "el modelo (LLM)", 32, font="title"); s.text(960, 412, "una máquina enorme", 26, font="note")
     ys = 500
     ws = ["El", "gato", "se", "sienta", "en", "el"]
     for i, w in enumerate(ws):

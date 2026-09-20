@@ -243,7 +243,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 # Bloque 4 · Qué es el Machine Learning
 
-**Objetivo**: comprender los fundamentos del ML supervisado (fases, modelo, datos, clases y sesgo) con ejemplos sencillos y una metáfora, el genio, que nos acompañará el resto de la sesión. **Tiempo**: 30 min.
+**Objetivo**: comprender los fundamentos del ML supervisado (fases, modelo, datos, clases y sesgo) con ejemplos sencillos y una metáfora, **el genio y la máquina**, que nos acompañará el resto de la sesión. **Tiempo**: 30 min.
 
 ## Diapositivas «Programar de siempre» y «Pero ¿y con un dígito escrito a mano?»
 
@@ -257,17 +257,27 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ## Diapositiva «Otra estrategia: aprender de ejemplos»
 
-![](../presentacion/img/ml-vs-tradicional.png){width=90%}
+![](../presentacion/img/ml-vs-tradicional.png){width=80%}
 
-> **Texto de apoyo.** Cuando no disponemos de un procedimiento para resolver un problema, pero sí de **muchos datos con sus soluciones**, podemos invertir el proceso. Ya no somos nosotros quienes proponemos las reglas: se las damos **datos y respuestas** a un **algoritmo de Machine Learning** y es él quien **induce las reglas**. Al conjunto de reglas inducidas se le llama **modelo de Machine Learning**.
-
-## Diapositiva «El modelo: un genio que aprende»
-
-![](../presentacion/img/genio-maquina.png){width=55%}
-
-> **Texto de apoyo.** Para hacerlo tangible os propongo una metáfora: **el genio**. El modelo es un genio que ha aprendido a reconocer cosas. Le enseñamos un **7** manuscrito y, tras pensarlo, responde: «un 7, con un 93 % de seguridad». No consulta una lista de reglas; ha aprendido de miles de ejemplos. Cuando use LearningML, veréis a un genio dentro de una máquina: ese genio **es el modelo**. *(La idea de la máquina y el genio como metáfora del ML procede de las ilustraciones que hizo para LearningML Roberto Marcano Ganzo; los dibujos de esta presentación son originales.)*
+> **Texto de apoyo.** Cuando no disponemos de un procedimiento para resolver un problema, pero sí de **muchos datos con sus soluciones**, podemos invertir el proceso. Ya no somos nosotros quienes proponemos las reglas: damos **datos y respuestas** a un **algoritmo de Machine Learning** y es él quien **induce las reglas**. Al conjunto de reglas inducidas se le llama **modelo de Machine Learning**.
 >
-> **Modelo no es lo mismo que algoritmo.** El **algoritmo** es el proceso que construye el modelo: es quien *enseña* al genio. El **modelo** es el resultado: el genio que contesta. Cuando el modelo está construido, ya no necesitamos al algoritmo para usarlo.
+> Para verlo con claridad voy a usar una metáfora que me acompaña en todos mis cursos y que aparece también en LearningML: **el genio y la máquina**. El **genio es el algoritmo de ML** (una red neuronal, KNN, etc.). La **máquina es el modelo de ML**. El genio analiza los datos de ejemplo y, a partir de ellos, **ajusta la máquina**. Cuando la máquina está ajustada, **el genio ya no hace falta**.
+
+## Diapositiva «La máquina: el modelo de ML»
+
+![](../presentacion/img/maquina-modelo.png){width=55%}
+
+> **Texto de apoyo.** Empecemos por la **máquina**, que es lo que realmente vamos a usar. Es el **modelo**: el conjunto de reglas ya ajustadas. Le entra un dato (por ejemplo, un **7** escrito a mano) y sale una respuesta: «un 7, con un 93 % de seguridad». No consulta una lista de reglas escritas por nadie: sus mandos han quedado ajustados a partir de ejemplos. Y lo más importante: una máquina bien ajustada reconoce **datos nuevos**, parecidos pero distintos a los que se usaron para ajustarla. A eso se le llama **generalización**.
+>
+> *(La metáfora del genio y su máquina procede de LearningML, con ilustraciones originales de Roberto Marcano Ganzo; los dibujos de esta presentación son originales y solo se inspiran en esa idea.)*
+
+## Diapositivas «El genio ajusta la máquina» y «El genio y la máquina»
+
+![](../presentacion/img/genio-ajusta.png){width=70%}
+
+> **Texto de apoyo.** ¿Quién ajusta la máquina? **El genio**. El genio es el **algoritmo de ML**. Recibe los **datos de ejemplo** (imágenes de dígitos con su etiqueta) y los analiza. Va probando la máquina con cada ejemplo, comprueba si acierta y, si no, **gira los mandos** (los parámetros del modelo) para acercarse a la respuesta correcta. Una red neuronal o KNN son formas distintas de ajustar la máquina, es decir, genios con estrategias diferentes.
+>
+> Y aquí está la idea clave: **una vez que la máquina está ajustada, el genio ya no es necesario**. El genio solo trabaja mientras aprende. Después nos quedamos con la máquina: ella sola reconoce los datos nuevos, y es la que integraremos en una aplicación. Por eso conviene distinguir: **el genio (algoritmo)** es el que construye; **la máquina (modelo)** es lo que se construye y lo que usamos.
 
 ## Diapositivas «El proceso completo», «Fase 1 · Entrenamiento», «Fase 2 · Aprendizaje» y «Fase 3 · Evaluación»
 
@@ -275,15 +285,17 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 > **Texto de apoyo.** El proceso tiene **cuatro momentos**:
 >
-> **1. Entrenamiento.** Una persona recopila **ejemplos** y los **etiqueta**: cada imagen de un dígito con la etiqueta «es un 4», «es un 7»… El conjunto de ejemplos etiquetados es el *conjunto de datos* o **dataset**. En esta fase el protagonista es el humano: es quien sabe.
->
-> **2. Aprendizaje.** El algoritmo de ML construye el modelo. Es la fase computacionalmente más compleja, pero la estrategia es sencilla de entender: construye una primera versión del modelo, que lo hace mal; le presenta un ejemplo y, como está etiquetado, se da cuenta de que ha fallado; **ajusta** el modelo hasta que ese ejemplo se clasifique bien; le presenta el siguiente, vuelve a fallar, vuelve a ajustar… Tras repetirlo con todo el dataset, el modelo es capaz de reconocer no solo los ejemplos, sino también **datos nuevos** que no estaban entre ellos.
+> **1. Entrenamiento.** Una persona recopila **ejemplos** y los **etiqueta**: cada imagen de un dígito con la etiqueta «es un 4», «es un 7»… El conjunto de ejemplos etiquetados es el *conjunto de datos* o **dataset**. En esta fase el protagonista es el humano: es quien sabe. El genio y la máquina esperan: la máquina todavía **sin ajustar**.
 
-![](../presentacion/img/aprendizaje.png){width=90%}
+![](../presentacion/img/entrenamiento.png){width=85%}
 
-> **3. Evaluación.** Comprobamos el modelo con datos que **no ha visto**. Eso mide su **poder de generalización**. Y aquí una idea clave: la naturaleza del modelo es **probabilística**. Aunque generalice bien, **no podemos asegurar** que acierte siempre; incluso puede fallar si le presentamos un ejemplar de una clase muy distinto de los usados en el entrenamiento.
+> **2. Aprendizaje.** Ahora trabaja el genio (el algoritmo de ML). Es la fase computacionalmente más compleja, pero la estrategia es sencilla de entender. **Se presenta un dato etiquetado** a la máquina, que todavía no está ajustada, y **falla**: contesta «¿un 1?» cuando era un 7. El genio **contrasta** la respuesta con la etiqueta, se da cuenta del error y **ajusta los mandos** de la máquina hasta que ese ejemplo se clasifique bien. La máquina **mejora**. Se presenta el siguiente ejemplo, vuelve a fallar, vuelve a ajustar… Tras repetirlo con todo el dataset, la máquina es capaz de reconocer no solo los ejemplos, sino también **datos nuevos** parecidos que no estaban entre ellos. Cuando está bien ajustada, **el genio ya no hace falta**.
+
+![](../presentacion/img/aprendizaje.png){width=95%}
+
+> **3. Evaluación.** Comprobamos la máquina (el modelo) con datos que **no ha visto**. Eso mide su **poder de generalización**: ¿reconoce lo parecido pero distinto? Y aquí una idea clave: la naturaleza del modelo es **probabilística**. Aunque generalice bien, **no podemos asegurar** que acierte siempre; incluso puede fallar si le presentamos un ejemplar de una clase muy distinto de los usados en el entrenamiento.
 >
-> **4. Uso.** Una vez evaluado, incorporamos el modelo a una **aplicación** informática.
+> **4. Uso.** Una vez evaluada, incorporamos la máquina (el modelo) a una **aplicación** informática. El genio se ha ido; la máquina se queda.
 
 ## Diapositivas «Clases o etiquetas» y «Para el ordenador todo son números»
 
@@ -459,7 +471,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/entrenamiento-llm.png){width=90%}
 
-> **Texto de apoyo.** ¿Cómo se entrena? Se parece bastante a lo que acabamos de ver. En el ML supervisado teníamos ejemplos con etiquetas; en un LLM, el ejemplo es un **fragmento de texto** y la **etiqueta es la palabra siguiente**. La ventaja enorme es que **la etiqueta sale del propio texto**: no hace falta que nadie etiquete nada, se toma una frase, se oculta la última palabra y se le pide al modelo que la adivine. Si falla, el algoritmo ajusta el modelo, igual que en la fase de aprendizaje que vimos: presentar, fallar, ajustar, repetir. Se hace con **casi todo lo escrito** disponible: libros, páginas web, código… billones de ejemplos.
+> **Texto de apoyo.** ¿Cómo se entrena? Se parece bastante a lo que acabamos de ver. En el ML supervisado teníamos ejemplos con etiquetas; en un LLM, el ejemplo es un **fragmento de texto** y la **etiqueta es la palabra siguiente**. La ventaja enorme es que **la etiqueta sale del propio texto**: no hace falta que nadie etiquete nada, se toma una frase, se oculta la última palabra y se le pide al modelo que la adivine. Si falla, el genio (el algoritmo) ajusta la máquina (el modelo), igual que en la fase de aprendizaje que vimos: presentar, fallar, ajustar, repetir. Solo que aquí la máquina es **enorme** (miles de millones de mandos o parámetros) y se ajusta con **casi todo lo escrito** disponible: libros, páginas web, código… billones de ejemplos. Cuando termina, el genio se retira y nos quedamos con la máquina: el LLM.
 >
 > A ese entrenamiento básico se suele añadir una segunda fase de **ajuste con retroalimentación humana**, en la que personas valoran las respuestas para que el modelo sea más útil y seguro. Para nuestro propósito, basta con quedarnos con la idea principal: **predecir la siguiente palabra**.
 
@@ -662,7 +674,7 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 
 **Agente de IA**: sistema que, a partir de un objetivo, decide y ejecuta acciones por su cuenta (navegar, programar, escribir correos…).
 **AGI**: inteligencia artificial general; sistema hipotético que iguala o supera a las personas en casi cualquier tarea intelectual.
-**Algoritmo de ML**: procedimiento que construye un modelo a partir de datos.
+**Algoritmo de ML** (*el genio*): procedimiento que analiza los datos y construye (ajusta) un modelo. Ej.: redes neuronales, KNN.
 **Alucinación**: contenido inventado que el modelo presenta como verdadero.
 **Clase / etiqueta**: categoría en la que se clasifican los datos.
 **Conjunto de datos (dataset)**: ejemplos, con sus etiquetas, con los que se entrena un modelo.
@@ -671,7 +683,7 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 **Generalización**: capacidad de un modelo para acertar con datos que no ha visto.
 ***Hard fun***: diversión desafiante; es divertido hacer cosas difíciles si tienen sentido.
 **LLM**: modelo de lenguaje de gran tamaño.
-**Modelo de ML**: conjunto de reglas, inducidas automáticamente, que permite clasificar o predecir.
+**Modelo de ML** (*la máquina*): conjunto de reglas, inducidas automáticamente, que permite clasificar o predecir; una vez ajustado ya no necesita al algoritmo.
 **n-grama**: secuencia de *n* palabras consecutivas.
 ***One-hot encoding***: codificación de un texto como lista de unos y ceros según las palabras de un diccionario.
 **Prompt**: texto inicial que se da a un modelo generativo.

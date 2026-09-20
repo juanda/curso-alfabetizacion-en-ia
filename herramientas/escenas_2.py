@@ -220,7 +220,8 @@ def hard_fun():
 
 def mapa_aprendizajes():
     s = Sketch(1000, 560, 43)
-    genie(s, 500, 200, 0.75, "happy", "up")
+    genie(s, 400, 190, 0.5, "happy", "ajusta")
+    maquina(s, 585, 270, 0.3, "ajustada")
     s.text(500, 420, "construir modelos de IA", 34, font="title")
     ramas = [(150, 70, "el papel\nde los datos", "yellow"), (500, 40, "derechos\nde autor", "pink"), (850, 70, "impacto\necológico", "green"),
              (175, 320, "naturaleza\nestadística, sesgo\ny alucinaciones", "orange"), (890, 300, "ética", "purple"), (500, 500, "pensamiento crítico", "blue")]
@@ -231,7 +232,7 @@ def mapa_aprendizajes():
         for i, ln in enumerate(ls):
             s.text(x, y + 6 + i * 30, ln, 28, font="title")
     s.arrow(250, 90, 410, 160, sw=3); s.arrow(500, 110, 500, 130, sw=3); s.arrow(750, 95, 590, 160, sw=3)
-    s.arrow(300, 330, 410, 270, sw=3); s.arrow(830, 300, 600, 250, sw=3); s.arrow(500, 470, 500, 430, sw=3)
+    s.arrow(300, 330, 410, 270, sw=3); s.arrow(830, 300, 680, 262, sw=3); s.arrow(500, 470, 500, 430, sw=3)
     return s
 
 

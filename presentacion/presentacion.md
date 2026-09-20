@@ -430,44 +430,53 @@ Aprender de ejemplos en lugar de seguir reglas
 
 ## Otra estrategia: aprender de ejemplos
 
-![w:995](img/ml-vs-tradicional.png)
+![w:900](img/ml-vs-tradicional.png)
 
 ---
 
 <!-- _class: compacta -->
 
-## El modelo: un genio que aprende
+## La máquina: el modelo de ML
 
-![bg right:46% fit](img/genio-maquina.png)
+![bg right:46% fit](img/maquina-modelo.png)
 
-- **Modelo de ML**: el conjunto de reglas que la máquina ha descubierto
+- **Modelo de ML**: el conjunto de reglas ya **ajustadas**, representado por una **máquina**
 - Entra un dato, sale una **respuesta con probabilidad**
-- Metáfora: **el genio**. Ha aprendido a reconocer, no a obedecer reglas escritas
-- Sirve para reconocer **datos nuevos**
+- Reconoce **datos nuevos**, parecidos pero distintos a los ejemplos: **generaliza**
 
 ---
 
-<!-- _class: compacta -->
+<!-- _class: centro -->
 
-## Modelo ≠ algoritmo
+## El genio ajusta la máquina
+
+![w:840](img/genio-ajusta.png)
+
+**El genio** (el algoritmo de ML) analiza los datos y ajusta **la máquina** (el modelo)
+
+---
+
+<!-- _class: grande -->
+
+## El genio y la máquina
 
 <div class="dos">
 <div class="tarjeta">
 
-### El algoritmo
-- El **proceso** que construye el modelo
-- Es quien «enseña» al genio
-- Se usa **una vez** (o cada vez que reentrenamos)
-- Ej.: redes neuronales, KNN
+### El genio = el algoritmo
+- Analiza los **datos de ejemplo**
+- **Ajusta** la máquina hasta que acierte
+- Ej.: redes neuronales, KNN…
+- Solo trabaja **mientras aprende**
 
 </div>
 <div class="tarjeta">
 
-### El modelo
+### La máquina = el modelo
 - El **resultado**: lo aprendido
-- Es el genio que **contesta**
-- Se puede usar **dentro de una aplicación**
-- Ya no necesita al algoritmo
+- Es la que **contesta**
+- Se usa **dentro de una aplicación**
+- **El genio ya no hace falta**
 
 </div>
 </div>
@@ -504,8 +513,8 @@ Aprender de ejemplos en lugar de seguir reglas
 
 ![bg right:46% fit](img/evaluacion.png)
 
-- Probamos con **datos que no ha visto**
-- Mide el **poder de generalización**
+- Probamos la máquina con **datos que no ha visto**
+- Mide el **poder de generalización**: ¿reconoce lo parecido pero distinto?
 - Su naturaleza es **probabilística**: nunca es 100 % seguro
 - Un ejemplar muy distinto a los del entrenamiento… **puede fallar**
 
