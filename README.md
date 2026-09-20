@@ -7,8 +7,8 @@ Autor: **Juan David Rodríguez García** · Licencia **CC BY-NC 4.0** (ver `LICE
 
 | Carpeta / fichero | Contenido |
 | --- | --- |
-| `pdf/presentacion-alfabetizacion-ia.pdf` | Presentación (87 diapositivas, 16:9) lista para proyectar y compartir |
-| `pdf/guion-alfabetizacion-ia.pdf` | Guion de apoyo (≈ 47 págs.): texto desarrollado, tiempos, demos, actividad de Glass Parrot, anexos |
+| `pdf/presentacion-alfabetizacion-ia.pdf` | Presentación (85 diapositivas, 16:9) lista para proyectar y compartir |
+| `pdf/guion-alfabetizacion-ia.pdf` | Guion de apoyo: texto desarrollado, tiempos, demos, actividad de Glass Parrot, anexos |
 | `presentacion/presentacion.md` | Fuente de la presentación en **Markdown (Marp)** |
 | `presentacion/img/` | Ilustraciones (PNG) y `img/svg/` (SVG vectoriales originales) |
 | `presentacion/tema/` | Tema visual `alfabetizacion` (papel crema, trazo a mano) |
@@ -20,7 +20,7 @@ Autor: **Juan David Rodríguez García** · Licencia **CC BY-NC 4.0** (ver `LICE
 
 1. La IA hoy · 2. La IA en el pasado · 3. Por qué alfabetizar en IA · 4. Qué es el Machine Learning ·
 5. LearningML · 6. Manos a la obra · 7. IA generativa de texto (LLM) · 8. Glass Parrot · Cierre.
-El guion incluye una tabla de tiempos (≈ 4 h) y cómo reducirla a ≈ 3 h.
+La sesión dura ≈ 3 h y **no incluye ejercicios en clase**: las actividades son tareas para la plataforma (LMS), cuyos enunciados están en el anexo E del guion. El guion incluye la tabla de tiempos y cómo reducirla a ≈ 2 h 30.
 
 ## Cómo regenerar
 

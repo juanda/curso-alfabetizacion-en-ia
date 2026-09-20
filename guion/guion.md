@@ -34,26 +34,28 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 - **Objetivo** del bloque y **tiempo** estimado.
 - Las **diapositivas** que lo componen, con el **texto de apoyo** que puedes decir casi tal cual (está escrito en primera persona, para leerlo en voz alta o adaptarlo).
-- **Preguntas, demostraciones y actividades** para hacer con el grupo.
+- **Preguntas de reflexión** y **demostraciones** para hacer en directo.
 - **Notas** de cautela: qué conviene verificar antes de citarlo.
+
+**Importante**: en esta sesión **no se hacen ejercicios en clase**. Las actividades (diseñar un modelo, practicar con LearningML, Glass Parrot…) se plantean como **tareas que los docentes realizan después en la plataforma (LMS)**. Sus enunciados completos están en el **anexo E**.
 
 ## Plan de tiempos
 
 | Bloque | Contenido | Minutos |
 | --- | --- | ---: |
-| 1 | La IA hoy (incluye debate) | 30 |
+| 1 | La IA hoy (incluye reflexión en común) | 20 |
 | 2 | La IA en el pasado | 10 |
 | 3 | Por qué alfabetizar en IA | 25 |
 | 4 | Qué es el Machine Learning | 30 |
 | 5 | LearningML | 15 |
-| — | *Descanso* | 15 |
-| 6 | Manos a la obra (demos y práctica) | 50 |
+| — | *Descanso* | 10 |
+| 6 | Manos a la obra (demostraciones en directo) | 30 |
 | 7 | IA generativa de texto (LLM) | 20 |
-| 8 | Glass Parrot (actividad) | 45 |
-| — | Cierre y preguntas | 10 |
-| | **Total** | **250** |
+| 8 | Glass Parrot (presentación y demostración) | 15 |
+| — | Cierre y presentación de las tareas | 10 |
+| | **Total** | **185** |
 
-**Si dispones de menos tiempo** (unas 3 horas): condensa el bloque 1 en 20 minutos (salta la diapositiva de la cronología y la del trabajo), reduce el bloque 3 a 15 minutos (una sola diapositiva de *hard fun* y una de conclusión), haz solo **dos** ejemplos del bloque 6 (asistente y cuadrantes) y deja la actividad de Glass Parrot en su primera y tercera partes.
+**Si dispones de menos tiempo** (unas 2 h 30): condensa el bloque 1 en 15 minutos (salta la diapositiva de la cronología y la del trabajo), reduce el bloque 3 a 15 minutos (una sola diapositiva de *hard fun* y una de conclusión), haz solo **dos** ejemplos del bloque 6 (asistente y cuadrantes) y limita Glass Parrot a la demostración corta.
 
 ## Preparación previa (checklist)
 
@@ -61,14 +63,14 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 - [ ] Tener listos los **materiales de las demos**: frases del asistente, imágenes de estilos pictóricos, el proyecto del camaleón y los enunciados del ejemplo matemático (ver bloque 6).
 - [ ] Probar **Glass Parrot** (https://glass-parrot.vercel.app/) desde el ordenador y la red del aula. *Truco*: si escribes directamente la dirección de las secciones internas (por ejemplo, el tutorial), el servidor puede devolver un error 404; entra siempre por la portada y usa el menú **Tutorial** / **Ponte a prueba**.
 - [ ] **Contrastar los hechos del verano de 2026** (bloque 1) con las fuentes originales, porque vienen de prensa y de fuentes secundarias y algunas cifras difieren (ver el anexo A).
-- [ ] Preparar **papel y bolígrafo** para la actividad desenchufada del *one-hot encoding* (opcional, bloque 4).
+- [ ] Publicar en la plataforma los **enunciados de las tareas** (anexo E) con sus recursos: frases del asistente, sprites, imágenes y la ficha de registro de Glass Parrot.
 - [ ] Llevar los **PDF** (presentación y guion) para compartirlos al final.
 
 <div class="salto"></div>
 
 # Bloque 1 · La IA hoy
 
-**Objetivo**: situar al grupo en el momento actual de la IA (especialmente la generativa), abrir la reflexión sobre el control del desarrollo y plantear el debate sobre el lugar de las personas frente a las máquinas. **Tiempo**: 30 min.
+**Objetivo**: situar al grupo en el momento actual de la IA (especialmente la generativa), abrir la reflexión sobre el control del desarrollo y plantear el debate sobre el lugar de las personas frente a las máquinas. **Tiempo**: 20 min.
 
 ## Diapositivas «Casi todo lo hace ya la IA» y «De hablar a actuar»
 
@@ -130,14 +132,14 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 > **Texto de apoyo.** Quiero dejar sobre la mesa una pregunta que no es técnica, sino ética y política: **si una IA hace un trabajo mejor que un humano, ¿debemos desplazar al humano y poner a la IA en su lugar?** La lógica del rendimiento dice que sí: es más barata, más rápida y no se cansa. Pero esa lógica tiene un problema: convierte a las personas en un coste. Yo defiendo lo contrario: los **derechos humanos** (el trabajo digno, la educación, la participación) están **por encima** de los supuestos «derechos» de la máquina, que en realidad son los intereses de quienes la desarrollan y la explotan. No se trata de rechazar la IA, sino de decidir **para qué** la queremos y **quién decide**.
 
-**Actividad · Debate en parejas (5–7 min)**
+**Reflexión en común (≈ 5 min)**. Lanza estas preguntas al grupo y comenta en voz alta:
 
 1. ¿Eficiencia o derechos humanos? ¿Qué debe pesar más?
 2. ¿Quién decide qué tareas se delegan en una máquina?
 3. Si una IA enseña «mejor», ¿qué se pierde cuando desaparece el docente?
 4. ¿Qué límites pondríais al desarrollo de la IA?
 
-*Pon en común dos o tres ideas. No hace falta llegar a acuerdos; el objetivo es que la pregunta quede abierta y presente durante el resto de la sesión.*
+*Recoge dos o tres ideas. No hace falta llegar a acuerdos; el objetivo es que la pregunta quede abierta y presente durante el resto de la sesión. Puedes proponer estas mismas preguntas como **foro de debate en la plataforma**.*
 
 ## Diapositiva «Una IA centrada en el humano»
 
@@ -307,7 +309,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/pixeles.png){width=80%}
 
-**Actividad desenchufada opcional (10 min).** *One-hot encoding con papel*: escriben 5 frases de 3 a 10 palabras; construyen el diccionario (sin las palabras vacías o *stopwords*: «el», «la», «de», «que»…); codifican cada frase como una lista de unos y ceros. Ejemplo: diccionario = [salón, ángulo, olvidada, oscuro, dueño, tal, vez]; «Del salón en el ángulo oscuro» → [1, 1, 0, 1, 0, 0, 0].
+**Tarea opcional para la plataforma (desenchufada).** *One-hot encoding con papel*: escribe 5 frases de 3 a 10 palabras; construye el diccionario (sin las palabras vacías o *stopwords*: «el», «la», «de», «que»…); codifica cada frase como una lista de unos y ceros. Ejemplo: diccionario = [salón, ángulo, olvidada, oscuro, dueño, tal, vez]; «Del salón en el ángulo oscuro» → [1, 1, 0, 1, 0, 0, 0].
 
 ## Diapositivas «Los datos lo son todo», «Sesgo (1)» y «Sesgo (2)»
 
@@ -369,11 +371,11 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 # Bloque 6 · Manos a la obra
 
-**Objetivo**: ver (y hacer) cuatro modelos completos con LearningML, con tipos de datos distintos, y extraer de cada uno qué se aprende y sobre qué aspectos de la IA nos hace reflexionar. **Tiempo**: 50 min.
+**Objetivo**: ver cuatro modelos completos con LearningML, con tipos de datos distintos, y extraer de cada uno qué se aprende y sobre qué aspectos de la IA nos hace reflexionar. **Tiempo**: 30 min.
 
-**Formato recomendado**: para cada ejemplo, 3–4 minutos de demostración en directo, y luego el grupo lo reproduce (o lo adapta) durante 7–10 minutos. Al final del bloque, la actividad «Tu turno».
+**Formato**: para cada ejemplo, 5–7 minutos de **demostración en directo**. El grupo **no practica en clase**: reproducirá y adaptará estos modelos después, como tarea en la plataforma (tareas 1 y 2 del anexo E).
 
-*Nota sobre materiales*: los ejemplos están descritos en la documentación del proyecto (sesión 5 de las actividades) y en el blog de LearningML. Antes de la sesión localiza y descarga lo que necesites: las frases del asistente y los sprites de lámpara y ventilador (https://web.learningml.org/recursos/), los enunciados de matemáticas (https://web.learningml.org/wp-content/uploads/2021/11/enunciados-de-problemas-de-matematicas.pdf), el ejemplo del camaleón (https://learningml.org/flipalo-en-colores-con-learningml/) y los estilos pictóricos (entradas «Programando con Jara. Estilos pictóricos», partes 1 y 2, del blog).
+*Nota sobre materiales*: los ejemplos están descritos en la documentación del proyecto (sesión 5 de las actividades) y en el blog de LearningML. Antes de la sesión localiza y descarga lo que necesites (y súbelo también a la plataforma para las tareas): las frases del asistente y los sprites de lámpara y ventilador (https://web.learningml.org/recursos/), los enunciados de matemáticas (https://web.learningml.org/wp-content/uploads/2021/11/enunciados-de-problemas-de-matematicas.pdf), el ejemplo del camaleón (https://learningml.org/flipalo-en-colores-con-learningml/) y los estilos pictóricos (entradas «Programando con Jara. Estilos pictóricos», partes 1 y 2, del blog).
 
 ## Ejemplo 1 · Texto: el asistente virtual
 
@@ -440,7 +442,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 **Qué se aprende.** Matemáticas (los cuadrantes, los signos de las coordenadas) y, sobre IA, la **cobertura del espacio de datos**: un modelo solo es fiable donde ha visto ejemplos.
 
-## Resumen y actividad «Tu turno»
+## Resumen de los cuatro ejemplos
 
 | Ejemplo | Datos | Se aprende sobre… | Sobre IA |
 | --- | --- | --- | --- |
@@ -448,10 +450,6 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 | Estilos | Imágenes | Arte, rasgos | Calidad y sesgo de datos |
 | Camaleón | Imágenes | Color, luz | Sensibilidad al contexto |
 | Cuadrantes | Números | Matemáticas | Cobertura del espacio |
-
-**Actividad · Tu turno (5 min + puesta en común).** Elige un contenido de **tu materia** que consista en clasificar. Decide si el modelo sería de **texto, imágenes o números**; define las **clases** y **al menos diez ejemplos** de cada una; y piensa qué **sesgo** podría aparecer. Pon en común dos o tres propuestas.
-
-*Para reflexionar por escrito (opcional)*: ¿cómo puede este tipo de actividad ayudar a los estudiantes a entender mejor los contenidos? Especialmente, la tarea de **recopilar datos** para elaborar un buen conjunto de entrenamiento.
 
 <div class="salto"></div>
 
@@ -507,7 +505,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 # Bloque 8 · Glass Parrot: aprender IA generativa con un enfoque construccionista
 
-**Objetivo**: usar Glass Parrot como recurso de aula para que los estudiantes *construyan* un modelo de lenguaje sencillo y descubran, con las manos, los conceptos del bloque anterior. **Tiempo**: 45 min.
+**Objetivo**: presentar Glass Parrot como recurso de aula para que los estudiantes *construyan* un modelo de lenguaje sencillo y descubran, con las manos, los conceptos del bloque anterior. En la sesión se **presenta y se demuestra** (≈ 15 min); la práctica es una **tarea para la plataforma** (anexo E). **Tiempo**: 15 min.
 
 ## Diapositiva «Glass Parrot: el loro de cristal»
 
@@ -536,27 +534,33 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 3. **Modo avanzado** (interruptor): te deja configurar el modelo: el **tamaño del n-grama** (cuántas palabras usa como contexto), la **temperatura** (cuanto mayor, más se igualan las probabilidades) y opciones de **suavizado** e **interpolación** (para manejar n-gramas poco frecuentes, combinando el resultado con n-gramas más cortos). Cada parámetro tiene un texto explicativo.
 4. **Tutorial** y **Ponte a prueba**: en el menú superior, un tutorial guiado y una sección de autoevaluación.
 
-## Propuesta de actividad: «Enséñale a hablar al loro» (≈ 50 min)
+## Demostración en directo (≈ 8 min)
 
-**Organización**: parejas (uno maneja, otro anota predicciones). **Materiales**: un ordenador por pareja, la ficha de registro (más abajo) y papel.
+Muestra, sin que el grupo practique: (1) carga el ejemplo **«Hablando del tiempo»** y pulsa *Entrenar*; (2) escribe un comienzo de frase y pulsa varias veces **Generar siguiente palabra**, comentando la lista de probabilidades; (3) activa el **modo avanzado** y cambia el **tamaño del n-grama** y la **temperatura**; (4) enseña brevemente el ejemplo **«Los modelos de lenguaje no saben contar…»**. Termina presentando la tarea 3.
 
-### Parte 1 · Explora (15 min)
+## Tarea para la plataforma: «Enséñale a hablar al loro»
+
+Enunciado completo de la tarea 3 (ver también el anexo E). Es también una propuesta para llevar al aula con el alumnado (ver «Adaptaciones» más abajo).
+
+**Organización**: individual (o en parejas, si se quiere trabajar en equipo). **Materiales**: un ordenador con acceso a Glass Parrot y la ficha de registro (más abajo), que se entrega en la plataforma.
+
+### Parte 1 · Explora
 
 **Objetivo**: entender qué hace el loro cuando predice.
 
 1. Abrir Glass Parrot y **cargar el ejemplo «Hablando del tiempo»**. Pulsar *Entrenar*.
-2. En la zona de prueba, escribir el comienzo de una frase. **Antes de pulsar**, cada pareja **anota su predicción** de la palabra que saldrá y por qué.
-3. Pulsar *Generar siguiente palabra* y **comparar**: ¿acertaron? Mirar la lista de probabilidades.
+2. En la zona de prueba, escribir el comienzo de una frase. **Antes de pulsar**, **anota tu predicción** de la palabra que saldrá y por qué.
+3. Pulsar *Generar siguiente palabra* y **comparar**: ¿acertaste? Mirar la lista de probabilidades.
 4. Repetir 5–6 veces. Preguntas guía: ¿sale siempre la misma palabra? ¿Sale la más probable? ¿Cuándo no?
 5. Seguir el **tutorial** de la herramienta para consolidar.
 
 *Idea que debe emerger*: el loro no «piensa»; **consulta lo que ha visto** y sortea entre las opciones según su frecuencia.
 
-### Parte 2 · Construye (20 min)
+### Parte 2 · Construye
 
 **Objetivo**: crear un modelo propio y ver cómo depende de los datos y de los parámetros.
 
-1. **Escribir un corpus propio** de 10–15 frases: sobre su asignatura, sobre el centro, sobre un tema divertido (por ejemplo, frases de recetas o cuentos).
+1. **Escribir un corpus propio** de 10–15 frases: sobre tu asignatura, sobre tu centro, sobre un tema divertido (por ejemplo, frases de recetas o cuentos).
 2. **Entrenar** y generar texto con distintos comienzos.
 3. Activar el **modo avanzado** y probar **n-gramas de tamaño 1, 2 y 3**. Observar: con n pequeño, el texto es más *libre* pero menos coherente; con n grande, más coherente pero **repite los datos**.
 4. Cambiar la **temperatura**: ¿más creativo o más disparatado?
@@ -564,7 +568,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 *Idea que debe emerger*: los **datos** determinan lo que el modelo puede decir; los **parámetros** determinan cómo elige.
 
-### Parte 3 · Rompe y reflexiona (15 min)
+### Parte 3 · Rompe y reflexiona
 
 **Objetivo**: comprender los límites y el origen del sesgo y de los errores.
 
@@ -573,7 +577,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 3. **Provocar un sesgo**: añadir al corpus propio frases que asocien siempre una característica con un mismo grupo, y comprobar que el modelo lo reproduce.
 4. **Discusión final**: ¿qué de esto ocurre en un LLM real? ¿Qué cambia con la escala?
 
-### Ficha de registro (para cada pareja)
+### Ficha de registro (para entregar en la plataforma)
 
 | Comienzo de frase | Mi predicción | Palabra generada | ¿Acerté? | ¿Por qué creo que salió? |
 | --- | --- | --- | :---: | --- |
@@ -591,12 +595,11 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 | Identifica un sesgo y su origen | | | |
 | Relaciona Glass Parrot con los LLM reales (parecidos y diferencias) | | | |
 
-### Adaptaciones
+### Adaptaciones para llevarla al aula con tu alumnado
 
 - **Primaria (5.º–6.º)**: solo la parte 1 y una versión sencilla de la 2, con corpus muy cortos (5–8 frases) y sin modo avanzado. Puede hacerse una versión **desenchufada** con tarjetas de palabras.
 - **ESO**: las tres partes, incluyendo el modo avanzado y la ficha de predicciones.
 - **Bachillerato / FP**: añadir la conexión con la probabilidad y los recuentos, y comparar con el funcionamiento de un LLM real.
-- **Formación del profesorado**: dedicar tiempo a la discusión sobre implicaciones en el aula.
 
 ## Diapositiva «Del loro de cristal a los LLM»
 
@@ -614,7 +617,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 # Cierre
 
-## Diapositivas «Cinco ideas» y «Licencia y créditos»
+## Diapositivas «Cinco ideas», «Tareas para hacer en la plataforma» y «Licencia y créditos»
 
 > **Texto de apoyo.** Termino recogiendo cinco ideas.
 >
@@ -626,7 +629,9 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 >
 > Y una última idea, que resume la sesión: **antes de usar, comprender; y para comprender, construir**.
 
-**Preguntas finales para el grupo**: ¿qué actividad concreta podéis llevar a vuestra aula la próxima semana? ¿Qué os preocupa? ¿Qué necesitaríais?
+Presenta las **tareas para la plataforma** (anexo E): qué se pide, dónde están los recursos y cuándo se entregan.
+
+**Preguntas finales para el grupo**: ¿qué actividad concreta podéis llevar a vuestra aula? ¿Qué os preocupa? ¿Qué necesitaríais?
 
 <div class="salto"></div>
 
@@ -689,3 +694,40 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 **Prompt**: texto inicial que se da a un modelo generativo.
 **Sesgo**: distorsión del modelo por datos desequilibrados, incompletos o prejuiciosos.
 **Temperatura**: parámetro que regula cuánto se aleja el modelo de la palabra más probable al elegir la siguiente.
+
+## Anexo E · Tareas para la plataforma (LMS)
+
+Las actividades no se hacen en clase: se proponen como tareas que los docentes realizan después en la plataforma. Los enunciados están escritos para copiarlos y adaptarlos. La dedicación estimada es orientativa.
+
+### Tarea 1 · Diseña un modelo de ML para tu materia (≈ 30 min)
+
+1. Elige un contenido de **tu materia** que consista en **clasificar**.
+2. Decide si el modelo sería de **texto, imágenes o números**.
+3. Define las **clases** y prepara **al menos 10 ejemplos de cada una** (escríbelos o indica de dónde los sacarías).
+4. Piensa qué **sesgo** podría aparecer: ¿están las clases equilibradas? ¿tus ejemplos cubren todos los casos?
+5. **Reflexión escrita**: ¿cómo puede este tipo de actividad ayudar a los estudiantes a entender mejor los contenidos? Especialmente, la tarea de **recopilar datos** para elaborar un buen conjunto de entrenamiento.
+
+**Se entrega**: un documento breve con el contenido elegido, el tipo de datos, las clases, los ejemplos, el posible sesgo y la reflexión.
+
+### Tarea 2 · Crea un modelo con LearningML (≈ 60 min)
+
+1. Elige **uno de los cuatro ejemplos** de la sesión (asistente virtual, estilos pictóricos, camaleón, cuadrantes) o **el modelo que diseñaste en la tarea 1**.
+2. Créalo en **LearningML**: clases, ejemplos, aprender y **evaluar con datos nuevos** que no hayas usado para entrenar.
+3. (Opcional) Programa la aplicación con el **Scratch de LearningML**.
+4. Ve **ampliando el conjunto de datos** y comprueba si el modelo mejora.
+
+**Se entrega**: el proyecto (o una captura) y 5–8 líneas sobre qué falló, por qué y cómo lo mejoraste.
+
+### Tarea 3 · Enséñale a hablar al loro (≈ 45 min)
+
+Sigue las tres partes del enunciado de la sección «Tarea para la plataforma: Enséñale a hablar al loro» (bloque 8): **explora**, **construye** y **rompe y reflexiona**.
+
+**Se entrega**: la **ficha de registro** completada y 5–8 líneas: ¿qué diferencias y parecidos hay entre Glass Parrot y un LLM real? ¿de dónde sale el sesgo?
+
+### Tarea opcional · One-hot encoding con papel (≈ 10 min)
+
+Sigue el enunciado del bloque 4 («Tarea opcional para la plataforma»).
+
+### Foro de debate
+
+Plantea en el foro las preguntas de la **reflexión en común** del bloque 1 (eficiencia y derechos humanos, quién decide qué se delega, qué se pierde sin docente, qué límites poner a la IA).

@@ -163,12 +163,14 @@ Se sustituyen **tareas**: programación, traducción, diseño, atención al clie
 
 <!-- _class: pregunta -->
 
-## Para el debate · 5 minutos en parejas
+## Para el debate · reflexión en común
 
 1. ¿Eficiencia o **derechos humanos**? ¿Qué debe pesar más?
 2. ¿Quién decide **qué tareas** se delegan en una máquina?
 3. Si una IA enseña «mejor», ¿**qué se pierde** cuando desaparece el docente?
 4. ¿Qué **límites** pondríais al desarrollo de la IA?
+
+*Y como pregunta de foro en la plataforma*
 
 ---
 
@@ -771,19 +773,6 @@ Cuatro modelos, cuatro tipos de datos
 
 ---
 
-<!-- _class: grande -->
-
-## Tu turno
-
-- Elige un **contenido de tu materia** que consista en clasificar
-- Decide: **¿texto, imágenes o números?**
-- Define las **clases** y **al menos 10 ejemplos** de cada una
-- Piensa: ¿qué **sesgo** podría aparecer?
-
-**5 minutos** · después lo compartimos
-
----
-
 <!-- _class: seccion -->
 <!-- _backgroundColor: #c9f0e6 -->
 
@@ -914,47 +903,6 @@ Un loro de cristal para ver cómo se aprende a hablar
 
 ---
 
-<!-- _class: grande -->
-
-## Actividad (1/3) · Explora
-
-**Objetivo**: descubrir cómo predice el loro. *15 min*
-
-1. Abre Glass Parrot y **carga un ejemplo predefinido** («Hablando del tiempo»)
-2. Antes de cada clic: **¿qué palabra crees que saldrá?**
-3. Pulsa *Generar siguiente palabra* y mira las **probabilidades**
-4. Repite. ¿Sale **siempre lo mismo**? ¿por qué?
-5. Sigue el **tutorial** de la herramienta
-
----
-
-<!-- _class: grande -->
-
-## Actividad (2/3) · Construye
-
-**Objetivo**: entrenar tu propio loro. *20 min*
-
-1. Escribe un **corpus** de 10–15 frases (tu materia, tu centro…)
-2. **Entrena** y genera texto
-3. Activa el **modo avanzado**: prueba n-gramas de tamaño 1, 2 y 3
-4. Cambia la **temperatura**: ¿más creativo o más disparatado?
-5. **Añade frases** y observa cómo cambian las probabilidades
-
----
-
-<!-- _class: grande -->
-
-## Actividad (3/3) · Rompe y reflexiona
-
-**Objetivo**: entender los límites. *15 min*
-
-1. Carga «**Los modelos de lenguaje no saben contar…**»: ¿por qué falla?
-2. Carga «**Profesiones sesgadas de padres/madres**»: ¿de dónde sale el sesgo?
-3. **Provoca un sesgo** con tu propio corpus
-4. Discusión: ¿qué de esto ocurre **en un LLM real**?
-
----
-
 <!-- _class: compacta -->
 
 ## Del loro de cristal a los LLM
@@ -987,6 +935,20 @@ Un loro de cristal para ver cómo se aprende a hablar
 3. El riesgo cognitivo es real: **deuda y sedentarismo cognitivo**
 4. Alfabetizar es **crear**, no solo usar: *hard fun*
 5. Con **LearningML** y **Glass Parrot** se entiende lo esencial **con las manos**
+
+
+---
+
+<!-- _class: grande -->
+
+## Tareas para hacer en la plataforma
+
+1. **Diseña** un modelo de ML para tu materia: **al menos 10 ejemplos** por clase
+2. **Crea** un modelo con **LearningML** y pruébalo con datos nuevos
+3. **Enseña a hablar al loro** con **Glass Parrot**: explora, construye y rompe
+4. *Opcional*: one-hot encoding con papel y lápiz
+
+Los enunciados, los recursos y las fichas de entrega, en la plataforma
 
 ---
 
