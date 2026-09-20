@@ -600,7 +600,7 @@ Aprender para enseñar a la máquina
 
 ## Qué es LearningML
 
-- Plataforma **gratuita y de código abierto**, sin registro obligatorio
+- Plataforma **gratuita y de código abierto**, **sin registro**
 - Diseñada bajo *«low floor, high ceiling, wide walls»*
 - Modelos de **texto, imágenes y números**
 - Algoritmos: **redes neuronales** y **KNN**

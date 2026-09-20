@@ -333,7 +333,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ![](../presentacion/img/lml-partes.png){width=95%}
 
-> **Texto de apoyo.** **LearningML** (https://learningml.org) es una plataforma educativa **gratuita y de código abierto** para enseñar y aprender los fundamentos del Machine Learning mediante actividades prácticas. Se diseñó con la idea de que tenga *«low floor, high ceiling and wide walls»*: entrada fácil, techo alto y paredes anchas (muchos caminos posibles). No exige registro; si te registras, puedes guardar en la nube y compartir proyectos.
+> **Texto de apoyo.** **LearningML** (https://learningml.org) es una plataforma educativa **gratuita y de código abierto** para enseñar y aprender los fundamentos del Machine Learning mediante actividades prácticas. Se diseñó con la idea de que tenga *«low floor, high ceiling and wide walls»*: entrada fácil, techo alto y paredes anchas (muchos caminos posibles). No requiere registro de ningún tipo.
 >
 > Tiene **tres piezas**: la **web** (información y acceso); el **editor de modelos de ML**, donde creas clases, añades ejemplos, entrenas y evalúas modelos de **texto, imágenes y números**; y el **editor de programación**, un Scratch modificado con bloques de ML para usar el modelo en una aplicación. Detrás, el editor usa algoritmos como **redes neuronales** o **KNN** (vecinos más cercanos). Está pensada para estudiantes de 10 a 17 años, pero funciona también con estudiantes universitarios, docentes y personas curiosas.
 
