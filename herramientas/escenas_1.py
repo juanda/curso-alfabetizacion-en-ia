@@ -8,7 +8,7 @@ def portada():
     s = Sketch(900, 600, 11)
     s.line(60, 540, 840, 540, sw=3)
     robot(s, 120, 300, 0.7, "blue", "happy", "up")
-    person(s, 380, 240, 1.35, "orange", "brown", True, "happy", "up")
+    person(s, 380, 240, 1.35, "orange", "#5a3b22", True, "happy", "up", beard=True)
     genie(s, 640, 210, 1.05, "happy", "up")
     parrot(s, 790, 430, 0.75, glass=True)
     s.sparks(640, 210, 60, 5)
