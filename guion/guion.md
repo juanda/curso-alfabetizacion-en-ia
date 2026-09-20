@@ -377,7 +377,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 **Recursos de las demostraciones y de las tareas** (descárgalos antes de la sesión y súbelos también a la plataforma):
 
-- **El asistente virtual**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) (lámpara y ventilador) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip) (una lista de frases por clase y un modelo ya construido).
+- **El asistente virtual**: [sprites](https://learningml.org/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip) (lámpara y ventilador) y [dataset](https://learningml.org/recursos/actividades/asistente-virtual/dataset-asistente-virtual.zip) (una lista de frases por clase).
 - **Flípalo en colores con el camaleón**: [sprites](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/sprites-camaleon.zip) (el camaleón con sus disfraces de colores) y [dataset](https://learningml.org/recursos/actividades/flipalo-en-colores-con-el-camaleon/dataset-camaleon.zip) (imágenes de cuatro colores y de prueba).
 - **Reconoce los estilos pictóricos**: [dataset](https://learningml.org/recursos/actividades/reconoce-los-estilos-pictoricos/dataset-estilos-pictoricos.zip) (cinco estilos y una carpeta de imágenes de prueba).
 - **Los cuadrantes matemáticos**: no necesita recursos; los puntos se escriben a mano.
