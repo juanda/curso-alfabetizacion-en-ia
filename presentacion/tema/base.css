@@ -83,6 +83,6 @@ section.pregunta ol li { margin: .5em 0; }
 .linea-tiempo a.lnk { position: absolute; display: block; border: none; }
 .linea-tiempo a.l1 { left: 32.56%; top: 28.04%; width: 19.5%; height: 12.14%; }
 .linea-tiempo a.l2 { left: 50.27%; top: 68.21%; width: 16.38%; height: 12.14%; }
-.linea-tiempo a.l3 { left: 65.38%; top: 28.04%; width: 18.46%; height: 12.14%; }
+.linea-tiempo a.l3 { left: 68.50%; top: 28.04%; width: 12.23%; height: 12.14%; }
 .linea-tiempo a.l4 { left: 81.02%; top: 68.21%; width: 18.98%; height: 17.68%; }
 section.nota-tl p { max-width: 980px; margin: .5em auto 0; font-size: 30px; line-height: 1.25; }
