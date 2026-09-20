@@ -128,23 +128,36 @@ def wrap(t, n):
 
 
 def timeline(s, events, y0, x0, dx, size=26, wrapn=17, dsize=36):
-    """events = [(fecha, texto, color, arriba(1)/abajo(-1))]"""
+    """events = [(fecha, texto, color, arriba(1)/abajo(-1)[, enlace(True/False)])]
+    Las etiquetas con enlace se dibujan en azul y subrayadas; sus rectángulos (coordenadas del lienzo)
+    quedan en s.enlaces, en el mismo orden, para colocar encima enlaces clicables."""
+    LINK = "#1f5fa0"
+    s.enlaces = getattr(s, "enlaces", [])
     s.arrow(x0 - 70, y0, x0 + dx * (len(events) - 1) + 90, y0, sw=5, head=22)
-    for i, (d, t, c, up) in enumerate(events):
+    for i, ev in enumerate(events):
+        d, t, c, up = ev[:4]
+        link = len(ev) > 4 and ev[4]
         x = x0 + i * dx
         s.ellipse(x, y0, 15, 15, c, sw=3.4)
         lines = wrap(t, wrapn)
+        kw = dict(color=LINK, underline=True) if link else {}
+        w = max(len(l) for l in lines) * size * 0.5 + 24
         if up == 1:
             s.line(x, y0 - 16, x, y0 - 50, sw=2.6, dbl=False)
             ty = y0 - 70
             for j, ln in enumerate(reversed(lines)):
-                s.text(x, ty - j * (size + 4), ln, size)
+                s.text(x, ty - j * (size + 4), ln, size, **kw)
             s.text(x, ty - len(lines) * (size + 4) - 6, d, dsize, font="title")
+            if link:
+                s.enlaces.append((x - w / 2, ty - (len(lines) - 1) * (size + 4) - size, x + w / 2, ty + 10))
         else:
             s.line(x, y0 + 16, x, y0 + 50, sw=2.6, dbl=False)
             s.text(x, y0 + 50 + dsize, d, dsize, font="title")
+            t0 = y0 + 50 + dsize + 34
             for j, ln in enumerate(lines):
-                s.text(x, y0 + 50 + dsize + 34 + j * (size + 4), ln, size)
+                s.text(x, t0 + j * (size + 4), ln, size, **kw)
+            if link:
+                s.enlaces.append((x - w / 2, t0 - size, min(x + w / 2, s.w), t0 + (len(lines) - 1) * (size + 4) + 10))
 
 
 def pesa(s, x, y, k=1.0):

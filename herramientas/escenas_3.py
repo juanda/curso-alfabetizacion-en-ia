@@ -321,9 +321,9 @@ def lml_partes():
 
 def lml_historia():
     s = Sketch(1300, 560, 65)
-    ev = [("2018", "nace la idea (INTEF)", "yellow", 1), ("2019", "primeros prototipos y pruebas", "orange", -1),
-          ("2020", "primera versión y artículo en RED", "pink", 1), ("2021", "evaluación con estudiantes", "purple", -1),
-          ("2022", "versión de escritorio y 2.0", "blue", 1), ("2024", "premio All Digital al mejor recurso educativo", "green", -1)]
+    ev = [("2018", "nace la idea (trabajo en el INTEF)", "yellow", 1), ("2019", "primeros prototipos y pruebas", "orange", -1),
+          ("2020", "primera versión y artículo en RED", "pink", 1, True), ("2021", "evaluación con estudiantes", "purple", -1, True),
+          ("2022", "versión de escritorio y 2.0", "blue", 1, True), ("2024", "premio All Digital al mejor recurso educativo", "green", -1, True)]
     timeline(s, ev, 285, 130, 210, 27, 17, 40)
     s.star(130 + 5 * 210, 285, 22, "yellow")
     return s

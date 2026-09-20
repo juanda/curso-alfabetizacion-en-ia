@@ -120,9 +120,11 @@ class Sketch:
     def dot(self, x, y, r=4, fill=INK):
         self.o.append('<circle cx="{:.1f}" cy="{:.1f}" r="{:.1f}" fill="{}"/>'.format(x + self.j(.6 * self.ka), y + self.j(.6 * self.ka), r * max(self.ks, .6), col(fill)))
 
-    def text(self, x, y, s, size=28, anchor="middle", font="body", color=INK, rot=0, weight="normal"):
+    def text(self, x, y, s, size=28, anchor="middle", font="body", color=INK, rot=0, weight="normal", underline=False):
         s = s.replace("&", "&amp;").replace("<", "&lt;")
         t = ' transform="rotate({} {} {})"'.format(rot, x, y) if rot else ""
+        if underline:
+            t += ' text-decoration="underline"'
         self.o.append('<text x="{}" y="{}" font-family="{}" font-size="{}" text-anchor="{}" fill="{}" font-weight="{}"{}>{}</text>'.format(
             x, y, FONTS[font], size, anchor, col(color), weight, t, s))
 

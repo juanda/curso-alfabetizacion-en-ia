@@ -611,11 +611,20 @@ Aprender para enseñar a la máquina
 
 ---
 
-<!-- _class: centro -->
+<!-- _class: centro nota-tl -->
 
 ## De la idea al premio
 
-![w:1137](img/lml-historia.png)
+<div class="linea-tiempo">
+<img src="img/lml-historia.png" alt="Cronograma de LearningML de 2018 a 2024">
+<a class="lnk l1" href="https://doi.org/10.6018/red.410121" title="Artículo en RED (2020)">&#8203;</a>
+<a class="lnk l2" href="https://doi.org/10.1145/3408877.3432393" title="Evaluación con estudiantes (SIGCSE 2021)">&#8203;</a>
+<a class="lnk l3" href="https://learningml.org/learningml-para-escritorio/" title="LearningML para escritorio">&#8203;</a>
+<a class="lnk l4" href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/" title="All Digital Awards 2024">&#8203;</a>
+</div>
+
+La idea partió de un trabajo de **Juan David Rodríguez y Jesús Moreno en el INTEF**; el desarrollo posterior es **completamente independiente del INTEF**
+
 
 ---
 
