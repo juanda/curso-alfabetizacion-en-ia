@@ -14,6 +14,7 @@ Autor: **Juan David Rodríguez García** · Licencia **CC BY-NC 4.0** (ver `LICE
 | `presentacion/tema/` | Tema visual `alfabetizacion` (papel crema, trazo a mano) |
 | `presentacion/fuentes/` | Tipografías manuscritas (Patrick Hand, Kalam, Caveat · SIL OFL) |
 | `guion/guion.md` | Fuente del guion en **Markdown** |
+| `samples/` | 19 fábulas y cuentos infantiles en **dominio público** (Wikisource) para entrenar Glass Parrot; índice y licencias en `samples/FUENTES.md` |
 | `herramientas/` | Scripts para regenerar ilustraciones y PDF |
 
 ## Estructura de la sesión
@@ -32,6 +33,7 @@ npm install            # solo la primera vez (instala @marp-team/marp-cli)
 ./construir.sh         # ilustraciones + presentación PDF + guion PDF
 ./construir.sh imagenes   # solo ilustraciones (herramientas/escenas_*.py)
 ./construir.sh pdf        # solo los PDF (tras editar los .md)
+python3 descargar_samples.py   # vuelve a descargar los textos de samples/ (requiere lxml)
 ```
 
 - Para editar la presentación: `presentacion/presentacion.md` (también se puede abrir con Marp for VS Code

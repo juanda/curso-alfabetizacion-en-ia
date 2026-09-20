@@ -536,7 +536,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 ## Demostración en directo (≈ 8 min)
 
-Muestra, sin que el grupo practique: (1) carga el ejemplo **«Hablando del tiempo»** y pulsa *Entrenar*; (2) escribe un comienzo de frase y pulsa varias veces **Generar siguiente palabra**, comentando la lista de probabilidades; (3) activa el **modo avanzado** y cambia el **tamaño del n-grama** y la **temperatura**; (4) enseña brevemente el ejemplo **«Los modelos de lenguaje no saben contar…»**. Termina presentando la tarea 3.
+Muestra, sin que el grupo practique: (1) carga el ejemplo **«Hablando del tiempo»** y pulsa *Entrenar*; (2) escribe un comienzo de frase y pulsa varias veces **Generar siguiente palabra**, comentando la lista de probabilidades; (3) activa el **modo avanzado** y cambia el **tamaño del n-grama** y la **temperatura**; (4) enseña brevemente el ejemplo **«Los modelos de lenguaje no saben contar…»**; (5) si quieres, sube un texto propio de la carpeta `samples/` (por ejemplo, una fábula de Samaniego) con el botón *Subir* y genera texto con él. Termina presentando la tarea 3.
 
 ## Tarea para la plataforma: «Enséñale a hablar al loro»
 
@@ -673,6 +673,7 @@ Los hechos del bloque 1 sobre el verano de 2026 proceden de las siguientes fuent
 - **LearningML**: https://learningml.org · editor de modelos: https://learningml.org/editor · Scratch con ML: https://learningml.org/scratch/ · manual: https://learningml.org/manual/
 - **Ejemplos** en el blog de LearningML: «¡Flípalo en colores con LearningML!» (camaleón), «Programando con Jara. Estilos pictóricos» (partes 1 y 2), «Reconocimiento de conjuntos numéricos» y «LearningML: Mejor recurso educativo 2024 — All Digital».
 - **Glass Parrot**: https://glass-parrot.vercel.app/ · código: https://github.com/ElenaTomasVela/GlassParrot
+- **Textos de entrenamiento para Glass Parrot**: carpeta `samples/` del proyecto (19 fábulas y cuentos infantiles en dominio público, de Samaniego, Iriarte, Quiroga y Martí; índice y licencias en `samples/FUENTES.md`). Las fábulas en verso de Samaniego (`01`–`07`) son cortas y muy adecuadas para ver los n-gramas; «El loro pelado» (`12`) encaja con el nombre de la herramienta.
 - **Scratch**: https://scratch.mit.edu
 
 ## Anexo D · Glosario
