@@ -40,7 +40,7 @@ def digitos_variados():
 
 
 def ml_vs_tradicional():
-    s = Sketch(1300, 700, 53)
+    s = Sketch(1300, 540, 53)
     # arriba
     s.text(30, 50, "Programación tradicional", 38, font="title", anchor="start")
     caja(s, 130, 130, 210, 70, "REGLAS", "yellow", 30); s.text(260, 140, "+", 40, font="title")
@@ -52,17 +52,13 @@ def ml_vs_tradicional():
     s.line(30, 230, 1270, 230, sw=3, dbl=True)
     # abajo
     s.text(30, 300, "Machine Learning", 38, font="title", anchor="start")
-    caja(s, 130, 420, 210, 70, "DATOS", "blue", 30); s.text(260, 430, "+", 40, font="title")
-    caja(s, 390, 420, 210, 70, "RESPUESTAS", "green", 26)
-    s.arrow(500, 420, 600, 420, sw=4)
-    genie(s, 700, 340, 0.55, "think", "ajusta")
-    s.text(720, 540, "el genio =", 28, font="note")
-    s.text(720, 574, "algoritmo de ML", 34, font="title")
-    s.arrow(860, 420, 940, 420, sw=4)
-    maquina(s, 1090, 430, 0.5, "ajustada")
-    s.text(1090, 540, "la máquina =", 28, font="note")
-    s.text(1090, 574, "el MODELO (las reglas)", 34, font="title")
-    s.text(650, 672, "el genio analiza los datos y ajusta la máquina: nosotros no escribimos las reglas", 30, font="note")
+    caja(s, 130, 400, 210, 70, "DATOS", "blue", 30); s.text(260, 410, "+", 40, font="title")
+    caja(s, 390, 400, 210, 70, "RESPUESTAS", "green", 26)
+    s.arrow(500, 400, 600, 400, sw=4)
+    caja(s, 720, 400, 210, 90, "ALGORITMO\nDE ML", "purple", 28)
+    s.arrow(830, 400, 930, 400, sw=4)
+    caja(s, 1050, 400, 230, 70, "MODELO DE ML", "yellow", 30)
+    s.text(650, 500, "el algoritmo analiza los datos y descubre las reglas: nosotros no las escribimos", 30, font="note")
     return s
 
 

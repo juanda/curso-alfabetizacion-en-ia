@@ -263,7 +263,7 @@ Este documento acompaña a la presentación (`presentacion-alfabetizacion-ia.pdf
 
 > **Texto de apoyo.** Cuando no disponemos de un procedimiento para resolver un problema, pero sí de **muchos datos con sus soluciones**, podemos invertir el proceso. Ya no somos nosotros quienes proponemos las reglas: damos **datos y respuestas** a un **algoritmo de Machine Learning** y es él quien **induce las reglas**. Al conjunto de reglas inducidas se le llama **modelo de Machine Learning**.
 >
-> Para verlo con claridad voy a usar una metáfora que me acompaña en todos mis cursos y que aparece también en LearningML: **el genio y la máquina**. El **genio es el algoritmo de ML** (una red neuronal, KNN, etc.). La **máquina es el modelo de ML**. El genio analiza los datos de ejemplo y, a partir de ellos, **ajusta la máquina**. Cuando la máquina está ajustada, **el genio ya no hace falta**.
+> Para verlo con claridad, en las siguientes diapositivas voy a usar una metáfora que me acompaña en todos mis cursos y que aparece también en LearningML: **el genio y la máquina**. El **genio es el algoritmo de ML** (una red neuronal, KNN, etc.). La **máquina es el modelo de ML**. El genio analiza los datos de ejemplo y, a partir de ellos, **ajusta la máquina**. Cuando la máquina está ajustada, **el genio ya no hace falta**.
 
 ## Diapositiva «La máquina: el modelo de ML»
 

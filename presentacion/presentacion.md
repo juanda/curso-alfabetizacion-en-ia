@@ -432,7 +432,7 @@ Aprender de ejemplos en lugar de seguir reglas
 
 ## Otra estrategia: aprender de ejemplos
 
-![w:900](img/ml-vs-tradicional.png)
+![w:1100](img/ml-vs-tradicional.png)
 
 ---
 
