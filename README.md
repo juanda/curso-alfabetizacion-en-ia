@@ -15,6 +15,7 @@ Autor: **Juan David Rodríguez García** · Licencia **CC BY-NC 4.0** (ver `LICE
 | `presentacion/fuentes/` | Tipografías manuscritas (Patrick Hand, Kalam, Caveat · SIL OFL) |
 | `guion/guion.md` | Fuente del guion en **Markdown** |
 | `samples/` | 19 fábulas y cuentos infantiles en **dominio público** (Wikisource) para entrenar Glass Parrot; índice y licencias en `samples/FUENTES.md` |
+| `plataforma/` | Enunciado de las 4 tareas para la plataforma (LMS), en `.docx`, con enlaces a los recursos |
 | `herramientas/` | Scripts para regenerar ilustraciones y PDF |
 
 ## Estructura de la sesión
