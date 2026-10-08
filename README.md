@@ -11,7 +11,7 @@ bloques 4 (aprendizaje automático) y 7 (IA generativa), y prescinde del taller 
 tareas de plataforma. El hilo presenta **LearningML** y **Glass Parrot** como formas de
 comprender la IA construyendo modelos sencillos antes de usarla con más criterio.
 
-- Presentación lista para proyectar: `pdf/congreso-pide-2026.pdf` (28 diapositivas).
+- Presentación lista para proyectar: `pdf/congreso-pide-2026.pdf` (30 diapositivas).
 - Fuente editable: `presentacion/congreso-pide-2026.md`.
 - Guía de tiempos y contenido: `guion/congreso-pide-2026.md`.
 

@@ -6,14 +6,14 @@
 
 | Diapositivas | Tiempo | Hilo oral |
 | --- | ---: | --- |
-| 1–5 · Apertura y sección 1 | 5 min | Abrir con usos positivos concretos: preparación de materiales, práctica y retroalimentación. Recordar que el docente fija el propósito, comprueba resultados y conserva la relación educativa. |
-| 6–8 · Sección 2 | 4 min | La alfabetización en IA empezó antes de los chatbots. Presentar brevemente el origen de LearningML y explicar por qué la IA generativa vuelve más necesaria la comprensión de los modelos. |
-| 9–14 · Sección 3 y puente de ML | 10 min | Contraponer descarga cognitiva útil y sustitución del esfuerzo. Explicar el *hard fun*. Mostrar la diferencia entre programar reglas y aprender de ejemplos. Mencionar entrenamiento, evaluación y sesgos con un ejemplo simple. |
-| 15–19 · Sección 4 | 9 min | Enseñar la secuencia de LearningML: datos, entrenamiento, prueba y aplicación en Scratch. Elegir **un** ejemplo curricular —arte, ciencias, lengua o matemáticas— y explicar qué aprende el alumnado al corregir el modelo. |
-| 20–21 · Puente de IA generativa | 4 min | Explicar que un modelo de lenguaje genera texto prediciendo el siguiente fragmento. Conectar ese mecanismo con la necesidad de verificar hechos, fuentes y adecuación. |
-| 22–25 · Sección 5 | 9 min | Presentar Glass Parrot, explicar los n-gramas con la imagen y comparar el modelo pequeño con un LLM. Si hay conexión, mostrar durante 2–3 minutos cómo cambian las probabilidades al añadir frases; si no, usar la captura y la ilustración. |
-| 26–27 · Cierre | 4 min | Recuperar la tesis: comprender con modelos que se pueden construir; después usar la IA generativa en tareas bien elegidas y verificar. Cerrar con la pregunta «¿qué decisiones educativas queremos conservar?». |
-| 28 · Fuentes | — | Diapositiva de consulta; no es necesario proyectarla en la intervención. |
+| 1–6 · Apertura y sección 1 | 6 min | Abrir con usos positivos concretos. Dedicar un minuto a los incidentes de 2026 y distinguir el riesgo demostrado en pruebas de ciberseguridad de la **inferencia pedagógica**: si delegamos sin control objetivos, evaluación y acompañamiento, la docencia puede perder autonomía. Cerrar con la necesidad de dirección humana. |
+| 7–9 · Sección 2 | 3 min | La alfabetización en IA empezó antes de los chatbots. Presentar brevemente el origen de LearningML y explicar por qué la IA generativa vuelve más necesaria la comprensión de los modelos. |
+| 10–16 · Sección 3 y puente de ML | 10 min | Abrir con la cronología de la aceleración desde 2015. Contraponer descarga cognitiva útil y sustitución del esfuerzo. Explicar el *hard fun*. Mostrar la diferencia entre programar reglas y aprender de ejemplos. Mencionar entrenamiento, evaluación y sesgos con un ejemplo simple. |
+| 17–21 · Sección 4 | 9 min | Enseñar la secuencia de LearningML: datos, entrenamiento, prueba y aplicación en Scratch. Elegir **un** ejemplo curricular —arte, ciencias, lengua o matemáticas— y explicar qué aprende el alumnado al corregir el modelo. |
+| 22–23 · Puente de IA generativa | 4 min | Explicar que un modelo de lenguaje genera texto prediciendo el siguiente fragmento. Conectar ese mecanismo con la necesidad de verificar hechos, fuentes y adecuación. |
+| 24–27 · Sección 5 | 9 min | Presentar Glass Parrot, explicar los n-gramas con la imagen y comparar el modelo pequeño con un LLM. Si hay conexión, mostrar durante 2–3 minutos cómo cambian las probabilidades al añadir frases; si no, usar la captura y la ilustración. |
+| 28–29 · Cierre | 4 min | Recuperar la tesis: comprender con modelos que se pueden construir; después usar la IA generativa en tareas bien elegidas y verificar. Cerrar con la pregunta «¿qué decisiones educativas queremos conservar?». |
+| 30 · Fuentes | — | Diapositiva de consulta; no es necesario proyectarla en la intervención. |
 | **Total** | **45 min** | |
 
 ## Ajustes frente al curso
@@ -29,3 +29,4 @@
 - Comprobar LearningML y Glass Parrot en el equipo y la red del auditorio; llevar el PDF para la opción sin conexión.
 - Elegir un único ejemplo curricular de LearningML para contar de forma concreta.
 - Evitar presentar como certezas generales los resultados de estudios preliminares sobre efectos cognitivos; la ponencia formula una pregunta pedagógica, no una conclusión causal.
+- Los incidentes de verano se documentan en [OpenAI](https://openai.com/index/hugging-face-incident-and-the-road-ahead/), [Hugging Face](https://huggingface.co/blog/agent-intrusion-technical-timeline) y [Anthropic](https://www.anthropic.com/news/improving-alignment-security-efforts). Ocurrieron en evaluaciones de ciberseguridad con protecciones reducidas o entornos mal configurados; no fueron incidentes en centros educativos. La relación con el trabajo docente es una advertencia sobre **quién define objetivos, permisos y límites**, no una equivalencia técnica entre ambos contextos.

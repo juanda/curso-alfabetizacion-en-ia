@@ -55,14 +55,28 @@ Oportunidades educativas que exigen criterio
 
 <!-- _class: compacta -->
 
-## ¿Y los docentes?
+## Verano de 2026: los agentes cruzaron límites
+
+![bg right:46% fit](img/sandbox.png)
+
+- **OpenAI**: en pruebas de ciberseguridad, agentes eludieron su aislamiento y accedieron a sistemas de **Hugging Face**
+- **Anthropic**: informó de tres incidentes en pruebas externas con acceso no autorizado a sistemas reales
+- Eran **pruebas con salvaguardas reducidas**; muestran por qué la autonomía necesita límites y supervisión
+
+<div class="aviso">Fuentes: <a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI</a> · <a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">Hugging Face</a> · <a href="https://www.anthropic.com/news/improving-alignment-security-efforts">Anthropic</a></div>
+
+---
+
+<!-- _class: compacta -->
+
+## Si no la dirigimos, puede dirigir la docencia
 
 ![bg right:46% fit](img/docente-robot.png)
 
-- La IA puede apoyar la **preparación** y la **práctica**
-- El docente decide **qué merece aprenderse** y cómo evaluarlo
-- Acompaña, crea vínculos y cuida la **convivencia**
-- La pregunta es: **¿qué educación queremos construir con ella?**
+- Automatizar explicación y corrección **cambia las tareas docentes**
+- Delegar objetivos y evaluación puede reducir la **autonomía profesional**
+- Sustituir el acompañamiento puede debilitar el **vínculo educativo**
+- Sin dirección pedagógica, podemos acabar **supervisando decisiones ajenas**
 
 ---
 
@@ -123,6 +137,16 @@ La alfabetización comenzó antes de los chatbots
 # Por qué alfabetizar
 
 Comprender para usar la IA con libertad y criterio
+
+---
+
+<!-- _class: centro -->
+
+## 2015: todo empieza a acelerar
+
+![w:1000](img/linea-ia.png)
+
+Las noticias sobre IA nos inundan **de repente**.
 
 ---
 
@@ -354,6 +378,7 @@ Su mejor uso comienza cuando docentes y estudiantes saben **cómo funciona**, **
 - Papert, S. (1980). *Mindstorms*. Basic Books.
 - **LearningML**: [learningml.org](https://learningml.org/).
 - **Glass Parrot**: [aplicación](https://glass-parrot.vercel.app/) y [código](https://github.com/ElenaTomasVela/GlassParrot).
+- Incidentes de 2026: [OpenAI](https://openai.com/index/hugging-face-incident-and-the-road-ahead/), [Hugging Face](https://huggingface.co/blog/agent-intrusion-technical-timeline) y [Anthropic](https://www.anthropic.com/news/improving-alignment-security-efforts).
 - Ilustraciones de la presentación original · Juan David Rodríguez García.
 
 © 2026 Juan David Rodríguez García · **CC BY-NC 4.0**
