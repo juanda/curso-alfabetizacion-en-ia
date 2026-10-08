@@ -168,6 +168,9 @@ Comprender para usar la IA con libertad y criterio
 
 ![bg right:46% fit](img/mago.png)
 
+> «Cualquier tecnología suficientemente avanzada es indistinguible de la magia.»<br>
+> — Arthur C. Clarke
+
 - La IA generativa puede **parecer creativa o pensante**
 - Aprende patrones de enormes cantidades de datos; una respuesta fluida **no garantiza comprensión ni verdad**
 - El riesgo es **antropomorfizarla** y darle una autoridad que no merece
@@ -400,6 +403,7 @@ Su mejor uso comienza cuando docentes y estudiantes saben **cómo funciona**, **
 - Circular del **V Congreso Internacional «La educación que queremos»** (PIDE, 2026).
 - Rodríguez-García, J. D. y cols. (2020). *LearningML*. [RED](https://doi.org/10.6018/red.410121).
 - Papert, S. (1980). *Mindstorms*. Basic Books.
+- Clarke, A. C. [Tercera ley](https://clarkefoundation.org/arthur-c-clarke-biography/), en *Profiles of the Future* (traducción).
 - **LearningML**: [learningml.org](https://learningml.org/).
 - **Glass Parrot**: [aplicación](https://glass-parrot.vercel.app/) y [código](https://github.com/ElenaTomasVela/GlassParrot).
 - Incidentes de 2026: [OpenAI](https://openai.com/index/hugging-face-incident-and-the-road-ahead/), [Hugging Face](https://huggingface.co/blog/agent-intrusion-technical-timeline) y [Anthropic](https://www.anthropic.com/news/improving-alignment-security-efforts).
