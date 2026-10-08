@@ -104,6 +104,16 @@ La alfabetización comenzó antes de los chatbots
 
 ---
 
+<!-- _class: centro -->
+
+## 2015: todo empieza a acelerar
+
+![w:1000](img/linea-ia.png)
+
+Las noticias sobre IA nos inundan **de repente**.
+
+---
+
 <!-- _class: compacta -->
 
 ## Docentes que se adelantaron
@@ -125,7 +135,19 @@ La alfabetización comenzó antes de los chatbots
 
 - Los chatbots hicieron visible la IA para todo el mundo
 - También hicieron más fácil **usarla sin comprenderla**
-- Aprender cómo se construyen los modelos cobra **más valor**
+- Los proyectos para comprender sus fundamentos quedaron **en segundo plano**
+
+---
+
+<!-- _class: compacta -->
+
+## Hoy es más importante que entonces
+
+![bg right:46% fit](img/caja-negra.png)
+
+- Usamos la IA como una **caja negra**
+- Sin comprender cómo aprende, cuesta reconocer **errores y sesgos**
+- Conocer sus límites ayuda a **elegir tareas, verificar resultados y conservar el criterio**
 
 ---
 
@@ -140,13 +162,15 @@ Comprender para usar la IA con libertad y criterio
 
 ---
 
-<!-- _class: centro -->
+<!-- _class: compacta -->
 
-## 2015: todo empieza a acelerar
+## Ilusionismo estadístico
 
-![w:1000](img/linea-ia.png)
+![bg right:46% fit](img/mago.png)
 
-Las noticias sobre IA nos inundan **de repente**.
+- La IA generativa puede **parecer creativa o pensante**
+- Aprende patrones de enormes cantidades de datos; una respuesta fluida **no garantiza comprensión ni verdad**
+- El riesgo es **antropomorfizarla** y darle una autoridad que no merece
 
 ---
 
