@@ -40,9 +40,19 @@ th, td { border-radius: 8px; }
 tr:nth-child(even) td { background: #faf6e8; }
 
 img { background: transparent; }
+/* Cabecera oficial del congreso; solo aparece en las diapositivas que incluyen la imagen. */
+section .cabecera-pide {
+  position: absolute; top: 12px; right: 18px;
+  width: 330px; height: auto; margin: 0;
+  z-index: 20;
+}
+section.portada .cabecera-pide { width: 450px; }
+section.seccion .cabecera-pide { width: 410px; }
+section.centro .cabecera-pide { width: 250px; }
 section.centro { text-align: center; }
 section.centro img { display: block; margin: 0 auto; }
 section.centro h2 { align-self: center; }
+section.centro:has(.cabecera-pide) h2 { font-size: 42px; }
 section.compacta { font-size: 30px; }
 section.grande { font-size: 38px; }
 section.grande li { margin: .3em 0; }

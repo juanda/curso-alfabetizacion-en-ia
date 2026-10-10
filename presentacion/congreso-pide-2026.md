@@ -13,6 +13,8 @@ description: "Ponencia de 45 minutos para el V Congreso Internacional La educaci
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ![bg right:46% fit](img/portada.png)
 
 # Usos positivos de la IA en la educación
@@ -32,6 +34,8 @@ Badajoz · 16 de octubre de 2026
 <!-- _class: seccion -->
 <!-- _backgroundColor: #ffe3b3 -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 <div class="num">1</div>
 
 # La IA hoy
@@ -41,6 +45,8 @@ Oportunidades educativas que exigen criterio
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Una herramienta de muchas caras
 
@@ -54,6 +60,8 @@ Oportunidades educativas que exigen criterio
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Verano de 2026: los agentes cruzaron límites
 
@@ -69,6 +77,8 @@ Oportunidades educativas que exigen criterio
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## Si no la dirigimos, puede dirigir la docencia
 
 ![bg right:46% fit](img/docente-robot.png)
@@ -81,6 +91,8 @@ Oportunidades educativas que exigen criterio
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Una IA centrada en las personas
 
@@ -96,6 +108,8 @@ Oportunidades educativas que exigen criterio
 <!-- _class: seccion -->
 <!-- _backgroundColor: #fff3b0 -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 <div class="num">2</div>
 
 # La IA en el pasado
@@ -106,6 +120,8 @@ La alfabetización comenzó antes de los chatbots
 
 <!-- _class: centro -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## 2015: todo empieza a acelerar
 
 ![w:1000](img/linea-ia.png)
@@ -115,6 +131,8 @@ Las noticias sobre IA nos inundan **de repente**.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Docentes que se adelantaron
 
@@ -129,6 +147,8 @@ Las noticias sobre IA nos inundan **de repente**.
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## La IA generativa cambió el foco
 
 ![bg right:46% fit](img/eclipse.png)
@@ -140,6 +160,8 @@ Las noticias sobre IA nos inundan **de repente**.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Hoy es más importante que entonces
 
@@ -154,6 +176,8 @@ Las noticias sobre IA nos inundan **de repente**.
 <!-- _class: seccion -->
 <!-- _backgroundColor: #ffd6e0 -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 <div class="num">3</div>
 
 # Por qué alfabetizar
@@ -163,6 +187,8 @@ Comprender para usar la IA con libertad y criterio
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Ilusionismo estadístico
 
@@ -179,6 +205,8 @@ Comprender para usar la IA con libertad y criterio
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## La descarga cognitiva tiene dos caras
 
 ![bg right:46% fit](img/descarga.png)
@@ -190,6 +218,8 @@ Comprender para usar la IA con libertad y criterio
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Aprender también requiere dificultad
 
@@ -203,6 +233,8 @@ Comprender para usar la IA con libertad y criterio
 
 <!-- _class: centro -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## Alfabetizar es poder crear
 
 ![w:1140](img/leer-escribir.png)
@@ -213,6 +245,8 @@ Comprender para usar la IA con libertad y criterio
 
 <!-- _class: centro -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## Una idea básica de Machine Learning
 
 ![w:1100](img/ml-vs-tradicional.png)
@@ -222,6 +256,8 @@ En vez de escribir todas las reglas, ofrecemos **ejemplos** para ajustar un mode
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Los datos enseñan y también sesgan
 
@@ -236,6 +272,8 @@ En vez de escribir todas las reglas, ofrecemos **ejemplos** para ajustar un mode
 <!-- _class: seccion -->
 <!-- _backgroundColor: #cfe6f7 -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 <div class="num">4</div>
 
 # LearningML
@@ -245,6 +283,8 @@ Aprender enseñando a la máquina
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Construir un modelo para aprender
 
@@ -261,6 +301,8 @@ Aprender enseñando a la máquina
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## El aula está llena de modelos posibles
 
 ![bg right:46% fit](img/clasificaciones.png)
@@ -276,6 +318,8 @@ El contenido de la materia da sentido a los datos.
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## Aprender para enseñar
 
 ![bg right:52% fit](img/ciclo.png)
@@ -287,6 +331,8 @@ El contenido de la materia da sentido a los datos.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Del modelo a una aplicación
 
@@ -300,6 +346,8 @@ El contenido de la materia da sentido a los datos.
 
 <!-- _class: compacta -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## La IA generativa también aprende de datos
 
 ![bg right:46% fit](img/autocompletar.png)
@@ -312,6 +360,8 @@ El contenido de la materia da sentido a los datos.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Qué conviene comprobar
 
@@ -328,6 +378,8 @@ Comprender el mecanismo ayuda a **verificar mejor**.
 <!-- _class: seccion -->
 <!-- _backgroundColor: #ffe3b3 -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 <div class="num">5</div>
 
 # Glass Parrot
@@ -337,6 +389,8 @@ Un modelo pequeño y visible para pensar en los grandes
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Un loro de cristal
 
@@ -353,6 +407,8 @@ Un modelo pequeño y visible para pensar en los grandes
 
 <!-- _class: centro -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## ¿Qué palabra viene después?
 
 ![w:1137](img/ngrama.png)
@@ -362,6 +418,8 @@ El modelo cuenta qué palabras siguieron a cada **secuencia** en sus ejemplos.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Lo pequeño aclara lo grande
 
@@ -376,6 +434,8 @@ El modelo cuenta qué palabras siguieron a cada **secuencia** en sus ejemplos.
 
 <!-- _class: grande -->
 
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
+
 ## Primero comprender; después usar mejor
 
 1. **LearningML**: crear un modelo para descubrir datos, errores y sesgos
@@ -385,6 +445,8 @@ El modelo cuenta qué palabras siguieron a cada **secuencia** en sus ejemplos.
 ---
 
 <!-- _class: compacta -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## La educación que queremos
 
@@ -397,6 +459,8 @@ Su mejor uso comienza cuando docentes y estudiantes saben **cómo funciona**, **
 ---
 
 <!-- _class: pequena nota-fuente -->
+
+<img class="cabecera-pide" src="img/pide-cabecera.png" alt="Cabecera oficial del V Congreso PIDE">
 
 ## Fuentes y recursos
 

@@ -13,6 +13,7 @@ comprender la IA construyendo modelos sencillos antes de usarla con más criteri
 
 - Presentación lista para proyectar: `pdf/congreso-pide-2026.pdf` (32 diapositivas).
 - Fuente editable: `presentacion/congreso-pide-2026.md`.
+- Cabecera oficial del congreso en todas las diapositivas: `presentacion/img/pide-cabecera.png`.
 - Guion oral desarrollado y tiempos: `guion/congreso-pide-2026.md` y `pdf/guion-congreso-pide-2026.pdf`.
 
 Para regenerar el PDF con las herramientas ya presentes en el sistema (`python3`,

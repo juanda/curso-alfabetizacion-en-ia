@@ -12,6 +12,7 @@ SOURCE = ROOT / "presentacion" / "congreso-pide-2026.md"
 OUTPUT = ROOT / "pdf" / "congreso-pide-2026.pdf"
 THEME = ROOT / "presentacion" / "tema" / "base.css"
 FONTS = ROOT / "presentacion" / "fuentes"
+CONGRESS_HEADER = ROOT / "presentacion" / "img" / "pide-cabecera.png"
 
 raw = SOURCE.read_text(encoding="utf-8")
 parts = re.split(r"(?m)^---\s*$", raw)
@@ -32,6 +33,13 @@ for number, slide in enumerate(slides, 1):
     bg_match = re.search(r"<!-- _backgroundColor: (#[\da-fA-F]+) -->", slide)
     klass = class_match.group(1) if class_match else ""
     slide = re.sub(r"<!-- _(?:class|backgroundColor|paginate|footer): .*? -->\n?", "", slide)
+    has_header = 'class="cabecera-pide"' in slide
+    slide = re.sub(r'<img class="cabecera-pide"[^>]+>\n?', "", slide)
+    header_image = (
+        f'<img class="cabecera-pide" src="{CONGRESS_HEADER.as_uri()}" '
+        'alt="Cabecera oficial del V Congreso PIDE">'
+        if has_header else ""
+    )
     bg_image = ""
 
     def image_sub(match):
@@ -54,7 +62,7 @@ for number, slide in enumerate(slides, 1):
     ).stdout
     color = f' style="background:{bg_match.group(1)}"' if bg_match else ""
     footer = "" if number == 1 else f'<footer>V Congreso PIDE · Juan David Rodríguez García · CC BY-NC 4.0</footer><span class="page">{number}</span>'
-    sections.append(f'<section class="{html.escape(klass)}"{color}>{bg_image}<div class="content">{body}</div>{footer}</section>')
+    sections.append(f'<section class="{html.escape(klass)}"{color}>{bg_image}{header_image}<div class="content">{body}</div>{footer}</section>')
 
 css = font_css + THEME.read_text(encoding="utf-8") + """
 @page { size: 13.333333in 7.5in; margin: 0; }
@@ -75,7 +83,7 @@ section.seccion .content { width:100%; }
 section.centro .content { width:100%; }
 section.centro .figure { margin: 0 auto; max-height:390px; }
 section.grande li { margin:.25em 0; }
-section.grande h2 { font-size:48px; }
+section.grande h2 { font-size:42px; }
 section.pequena { font-size:25px; }
 section.pequena h2 { font-size:44px; }
 section.pequena li { margin:.16em 0; }
