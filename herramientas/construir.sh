@@ -31,6 +31,8 @@ pdf() {
   mkdir -p "$RAIZ/pdf"
   "$AQUI/marp-pdf.sh"
   python3 "$AQUI/guion_pdf.py"
+  python3 "$AQUI/congreso_pdf.py"
+  python3 "$AQUI/guion_congreso_pdf.py"
 }
 
 case "$1" in

@@ -34,19 +34,26 @@ def pioneros():
 
 def eclipse():
     s = Sketch(W, H, 33)
-    for a in range(0, 360, 30):
-        r = math.radians(a)
-        s.line(680 + math.cos(r) * 150, 170 + math.sin(r) * 150, 680 + math.cos(r) * 190, 170 + math.sin(r) * 190, sw=4, stroke="#e0a800", dbl=False)
-    s.ellipse(680, 170, 130, 130, "yellow", sw=4)
-    s.text(680, 165, "IA", 60, font="title")
-    s.text(680, 210, "generativa", 34, font="title")
-    s.o.append('<ellipse cx="300" cy="440" rx="250" ry="70" fill="#000" opacity="0.13"/>')
-    s.rect(240, 410, 80, 70, "#c07a4a", r=6)
-    s.line(280, 410, 280, 320, sw=4)
-    s.path([(280, 350), (230, 330), (240, 290), (278, 320)], True, "green", INK, 3, 1)
-    s.path([(282, 336), (330, 320), (334, 282), (288, 310)], True, "green", INK, 3, 1)
-    s.text(280, 520, "alfabetización en IA (ML)", 30, font="title")
-    s.arrow(600, 250, 400, 350, bend=-20, sw=3)
+    # el escenario a oscuras; solo brilla lo que ilumina el foco
+    s.o.append('<rect x="0" y="0" width="900" height="560" rx="28" fill="#1e2433" opacity="0.16"/>')
+    s.o.append('<path d="M585,95 L655,95 L840,455 L400,455 Z" fill="#ffd95a" opacity="0.45"/>')
+    s.o.append('<ellipse cx="620" cy="455" rx="220" ry="45" fill="#ffd95a" opacity="0.75"/>')
+    # el foco
+    s.line(560, 18, 680, 18, sw=5)
+    s.line(620, 18, 620, 42, sw=4)
+    s.poly([(590, 42), (650, 42), (662, 98), (578, 98)], "gray", sw=3.4)
+    # la IA generativa, en el centro del escenario
+    robot(s, 620, 295, 0.85, "blue", "happy", "up")
+    s.bubble(700, 110, 190, 70, ["¡Mira lo que", "sé hacer!"], tail=(675, 230), size=24)
+    s.text(620, 520, "IA generativa", 34, font="title")
+    # la alfabetización, en la penumbra
+    s.o.append('<ellipse cx="170" cy="455" rx="120" ry="28" fill="#000" opacity="0.18"/>')
+    s.rect(130, 390, 80, 70, "#c07a4a", r=6)
+    s.line(170, 390, 170, 300, sw=4)
+    s.path([(170, 330), (120, 310), (130, 270), (168, 300)], True, "green", INK, 3, 1)
+    s.path([(172, 316), (220, 300), (224, 262), (178, 290)], True, "green", INK, 3, 1)
+    s.text(170, 505, "comprender cómo aprende", 26, font="title")
+    s.text(170, 535, "(alfabetización en IA)", 24, font="note")
     return s
 
 
