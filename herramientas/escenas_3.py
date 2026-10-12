@@ -40,10 +40,11 @@ def digitos_variados():
 
 
 def ml_vs_tradicional():
-    s = Sketch(1300, 540, 53)
+    s = Sketch(1300, 570, 53)
     # arriba
     s.text(30, 50, "Programación tradicional", 38, font="title", anchor="start")
     caja(s, 130, 130, 210, 70, "REGLAS", "yellow", 30); s.text(260, 140, "+", 40, font="title")
+    s.text(130, 200, "las escribimos nosotros", 26, font="note")
     caja(s, 390, 130, 210, 70, "DATOS", "blue", 30)
     s.arrow(500, 130, 600, 130, sw=4)
     caja(s, 720, 130, 210, 90, "programa\n(computadora)", "gray", 26)
@@ -58,7 +59,10 @@ def ml_vs_tradicional():
     caja(s, 720, 400, 210, 90, "ALGORITMO\nDE ML", "purple", 28)
     s.arrow(830, 400, 930, 400, sw=4)
     caja(s, 1050, 400, 230, 70, "MODELO DE ML", "yellow", 30)
-    s.text(650, 500, "el algoritmo analiza los datos y descubre las reglas: nosotros no las escribimos", 30, font="note")
+    s.text(1050, 470, "= las REGLAS", 30, font="title")
+    s.text(1050, 500, "extraídas de los ejemplos", 26, font="note")
+    s.text(560, 520, "cuando no sabemos escribir las reglas, el algoritmo las extrae", 30, font="note")
+    s.text(560, 552, "a partir de suficientes ejemplos: ese es el modelo", 30, font="note")
     return s
 
 
