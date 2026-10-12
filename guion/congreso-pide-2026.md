@@ -141,7 +141,7 @@ El aprendizaje automático cambia la estrategia. Ofrecemos **ejemplos** y, en el
 
 ## Diapositiva 18 · Los datos enseñan y también sesgan
 
-Hay dos momentos distintos. Primero **entrenamos**: reunimos ejemplos y sus etiquetas. Después **evaluamos** con casos que el modelo no ha visto. Si probamos solo con los mismos datos que usamos para enseñarle, podemos engañarnos: quizá los recuerde, pero no sepa generalizar.
+Hay tres momentos distintos. Primero **entrenamos**: reunimos ejemplos y sus etiquetas. Luego el sistema **aprende**: ejecutamos el algoritmo de ML, que construye un modelo a partir de esos ejemplos. Después **evaluamos** con casos que el modelo no ha visto. Si probamos solo con los mismos datos que usamos para enseñarle, podemos engañarnos: quizá los recuerde, pero no sepa generalizar.
 
 También importa qué ejemplos elegimos. Si una clase tiene muchos casos y otra muy pocos, o si todos los ejemplos de un tipo se parecen demasiado, el modelo puede fallar de forma desigual. Esto es una lección educativa formidable. El sesgo no es una propiedad misteriosa que aparece al final; puede empezar en nuestras decisiones de **recogida, selección y etiquetado** de datos. Cuando un estudiante descubre esto entrenando su propio modelo, la palabra «sesgo» deja de ser una advertencia abstracta.
 

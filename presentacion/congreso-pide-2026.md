@@ -264,6 +264,7 @@ En vez de escribir todas las reglas, ofrecemos **ejemplos** para ajustar un mode
 ![bg right:46% fit](img/balance.png)
 
 - **Entrenar**: aportar ejemplos y sus etiquetas
+- **Aprender**: ejecutar el algoritmo de ML para construir un modelo
 - **Evaluar**: probar con casos que el modelo no ha visto
 - Si faltan casos o sobran de una clase, el modelo puede **fallar de forma desigual**
 
@@ -342,6 +343,8 @@ El contenido de la materia da sentido a los datos.
 - El alumnado diseña, programa, prueba y **explica decisiones**
 - Así se practican a la vez **contenido, programación y juicio crítico**
 
+Construir IAs con LearningML puede unir el aprendizaje de una materia, el pensamiento computacional y el pensamiento crítico en una actividad en la que el alumnado **crea, prueba, discute y comparte**.
+
 ---
 
 <!-- _class: compacta -->
@@ -350,11 +353,11 @@ El contenido de la materia da sentido a los datos.
 
 ## La IA generativa también aprende de datos
 
-![bg right:46% fit](img/autocompletar.png)
+![bg right:46% fit](img/bucle-vertical.png)
 
 - Un modelo de lenguaje predice el **siguiente fragmento de texto**
-- Usa el contexto y patrones aprendidos de grandes colecciones
-- Genera una respuesta **paso a paso**
+- Usa patrones aprendidos de grandes colecciones
+- Cada fragmento elegido **pasa a formar parte del contexto** para elegir el siguiente
 - Una frase convincente **no garantiza que sea verdadera**
 
 ---

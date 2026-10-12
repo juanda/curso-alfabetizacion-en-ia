@@ -170,8 +170,7 @@ def temperatura():
     return s
 
 
-def bucle():
-    s = Sketch(1300, 560, 79)
+def _escalera(s):
     frase = ["El", "gato", "se", "sienta", "en", "el", "sofá"]
     for r_ in range(1, 6):
         y = 30 + (r_ - 1) * 100
@@ -185,11 +184,27 @@ def bucle():
             x += wd + 14
         if r_ < 5:
             s.arrow(120, y + 66, 120, y + 96, sw=2.6, head=10)
+
+
+def bucle():
+    s = Sketch(1300, 560, 79)
+    _escalera(s)
     s.text(1000, 140, "cada palabra elegida", 34, font="title")
     s.text(1000, 184, "pasa a formar parte", 34, font="title")
     s.text(1000, 228, "del contexto", 34, font="title")
     parrot(s, 1080, 400, 0.8, glass=False)
     s.text(650, 540, "prompt → palabra → nuevo contexto → palabra → …", 30, font="note")
+    return s
+
+
+def bucle_vertical():
+    # misma idea que bucle(), en formato casi cuadrado para media diapositiva
+    s = Sketch(780, 760, 79)
+    _escalera(s)
+    parrot(s, 620, 160, 0.6, glass=False)
+    s.text(390, 580, "cada palabra elegida pasa", 36, font="title")
+    s.text(390, 626, "a formar parte del contexto", 36, font="title")
+    s.text(390, 720, "prompt → palabra → nuevo contexto → palabra → …", 28, font="note")
     return s
 
 
@@ -260,5 +275,5 @@ def glassparrot_ui():
 
 
 ESCENAS = {"asistente": asistente, "estilos": estilos, "camaleon": camaleon, "cuadrantes": cuadrantes, "autocompletar": autocompletar,
-           "entrenamiento-llm": entrenamiento_llm, "probabilidades": probabilidades, "temperatura": temperatura, "bucle": bucle, "loro": loro,
+           "entrenamiento-llm": entrenamiento_llm, "probabilidades": probabilidades, "temperatura": temperatura, "bucle": bucle, "bucle-vertical": bucle_vertical, "loro": loro,
            "loro-cristal": loro_cristal, "ngrama": ngrama, "glassparrot-ui": glassparrot_ui}

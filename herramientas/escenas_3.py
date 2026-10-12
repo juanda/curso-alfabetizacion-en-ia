@@ -366,16 +366,16 @@ def ciclo():
     genie(s, 450, 215, 0.42, "happy", "ajusta")
     maquina(s, 640, 265, 0.34, "ajustada")
     pasos = [(550, 60, "1 · Aprendo el tema", "yellow"), (900, 220, "2 · Recopilo y clasifico\nejemplos (entrenamiento)", "orange"),
-             (830, 470, "3 · El genio ajusta\nla máquina (modelo)", "purple"), (270, 470, "4 · Evalúo el modelo", "green"),
+             (865, 470, "3 · El genio (algoritmo)\najusta la máquina (modelo)", "purple"), (270, 470, "4 · Evalúo el modelo", "green"),
              (200, 220, "5 · Lo uso en una\naplicación (Scratch)", "blue")]
     for x, y, t, c in pasos:
         ls = t.split("\n")
-        w = 350
+        w = 400 if c == "purple" else 350
         s.rect(x - w / 2, y - 34, w, 46 + 30 * len(ls), c, r=18)
         for i, ln in enumerate(ls):
             s.text(x, y + 6 + i * 30, ln, 27, font="title")
-    s.arrow(700, 75, 800, 170, bend=-20); s.arrow(920, 300, 880, 440, bend=-20)
-    s.arrow(680, 490, 420, 490, bend=15); s.arrow(220, 440, 200, 320, bend=-20)
+    s.arrow(700, 75, 800, 170, bend=-20); s.arrow(920, 300, 900, 440, bend=-20)
+    s.arrow(655, 490, 420, 490, bend=15); s.arrow(220, 440, 200, 320, bend=-20)
     s.arrow(300, 160, 400, 75, bend=-20)
     s.text(550, 580, "…y si falla, mejoro los datos y vuelvo a empezar", 30, font="note")
     return s
